@@ -56,8 +56,7 @@
     },
     {
       id: "6",
-      imageUrl:
-        "https://gameofchoicenotchance.com/i/image1.png",
+      imageUrl: "https://gameofchoicenotchance.com/i/image1.png",
       year: "2018 - ONGOING",
       location: "india",
       title: "Mobile Game",
@@ -230,26 +229,41 @@
     },
   ];
 
+  // Category settings for background images and colors
+  const categorySettings = {
+    All: {
+      color: "#333",
+      backgroundImage:
+        "https://images.unsplash.com/photo-1571053748382-141b7de59b88?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    "Game-Based Learning": {
+      color: "#7d1e57",
+      backgroundImage:
+        "https://images.unsplash.com/photo-1682685797828-d3b2561deef4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    "Demand Generation": {
+      color: "#d7401a",
+      backgroundImage:
+        "https://images.unsplash.com/photo-1682686581427-7c80ab60e3f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    "Social Franchising of Health Services": {
+      color: "#3d7a31",
+      backgroundImage:
+        "https://images.unsplash.com/photo-1695653420508-f2481c1d783c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  };
+
   // Function to render the timeline
-  function renderTimeline(category = null) {
+  function renderTimeline(category = "All") {
     const timelineContainer = $("#timeline-1 .timeline");
     timelineContainer.empty(); // Clear existing content
 
-    // Color mapping for categories
-    const categoryColors = {
-      "Game-Based Learning": "#7d1e57",
-      "Demand Generation": "#d7401a",
-      "Social Franchising of Health Services": "#3d7a31",
-    };
-
     timelineData.forEach((item) => {
+      // Filter by category if specified
+      if (category !== "All" && item.category !== category) return;
 
-      if (category && item.category !== category) return;
-
-      // Determine the background color based on the category
-      const backgroundColor = categoryColors[item.category] || "#ffffff"; // Default to white if category not found
-
-
+      const backgroundColor =
+        categorySettings[item.category].color || "#ffffff"; // Fallback to white if category not found
       const content = `
         <div class="timeline-item" data-text="${item.category}">
           <div class="timeline__content">
@@ -266,117 +280,101 @@
     });
   }
 
-   function filterTimelineItems(category) {
-    $('.timeline-item').each(function() {
-      if ($(this).data('text') !== category) {
-        $(this).css('max-height', '0').queue(function(next) {
-          $(this).css('display', 'none');
-          next();
-        });
-      } else {
-        $(this).css('display', '').css('max-height', ''); // Reset display and max-height
-      }
+  // Function to set up the navigation
+  function setupNavigation() {
+    $(".nav-item").on("click", function () {
+      var selectedCategory = $(this).data("category");
+
+      // Get the background image from the categorySettings
+      var backgroundImage = categorySettings[selectedCategory].backgroundImage;
+
+      // Update the background image of the timeline container
+      $(".timeline-container").css(
+        "background-image",
+        "url(" + backgroundImage + ")"
+      );
+
+      // Render the timeline with the selected category
+      renderTimeline(selectedCategory);
+
+      // Reinitialize the timeline plugin to reflect changes
+      $("#timeline-1").timeline();
     });
-   
   }
 
-  function setupNavigation() {
-    $('.nav-item').on('click', function() {
-        var selectedCategory = $(this).data('category');
-
-        if (selectedCategory === 'All') {
-            // Render all timeline items
-            renderTimeline();
-            $("#timeline-1").timeline();
-        } else {
-            // Render items of the selected category
-            renderTimeline(selectedCategory);
-            $("#timeline-1").timeline();
-        }
-    });
-}
-
+  // Function to toggle navigation for mobile view
   function toggleNavigation() {
     var nav = $("#floating-nav");
     if (nav.css("display") === "none") {
-      nav.css("display", "flex"); // Show the nav as a flexbox
+      nav.css("display", "flex");
     } else {
-      nav.css("display", "none"); // Hide the nav
+      nav.css("display", "none");
     }
   }
 
+  // Function to set up the hamburger menu toggle
   function setupHamburgerToggle() {
     $("#hamburger-icon").click(toggleNavigation);
   }
 
   // Timeline plugin definition
   $.fn.timeline = function () {
-    // var selectors = {
-    //   id: $(this),
-    //   item: $(this).find(".timeline-item"),
-    //   activeClass: "timeline-item--active",
-    //   img: ".timeline__img",
-    // };
-
-    //filtering selector
-
     var selectors = {
       id: $(this),
-      item: $(this).find(".timeline-item").filter(function() {
-        return $(this).css('display') !== 'none';
-      }),
+      item: $(this).find(".timeline-item"),
       activeClass: "timeline-item--active",
       img: ".timeline__img",
     };
 
-    // Initial setup
-    function setupTimeline() {
-      selectors.item.eq(0).addClass(selectors.activeClass);
-      selectors.id.css(
-        "background-image",
-        "url(" + selectors.item.first().find(selectors.img).attr("src") + ")"
-      );
-      var itemLength = selectors.item.length;
+    selectors.id.css(
+      "background-image",
+      "url(" +
+        "https://images.unsplash.com/photo-1571053748382-141b7de59b88?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" +
+        ")"
+    );
 
-      $(window).scroll(function () {
-    var pos = $(this).scrollTop();
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          var now = Date.now();
+          var item = entry.target;
 
-    // Check if the scroll position is near the top of the page
-    if (pos < 100) { // You can adjust this threshold as needed
-        selectors.item.removeClass(selectors.activeClass);
-        selectors.item.first().addClass(selectors.activeClass);
-        selectors.id.css(
-            "background-image",
-            "url(" + selectors.item.first().find(selectors.img).attr("src") + ")"
-        );
-    } else {
-        selectors.item.each(function (i) {
-            var imgBottom = $(this).find(selectors.img).offset().top + $(this).find(selectors.img).outerHeight();
-
-            if (pos >= imgBottom) {
-                var nextItem = selectors.item.eq(i + 1);
-                if (nextItem.length) {
-                    selectors.id.css(
-                        "background-image",
-                        "url(" + nextItem.find(selectors.img).attr("src") + ")"
-                    );
-                    selectors.item.removeClass(selectors.activeClass);
-                    nextItem.addClass(selectors.activeClass);
-                }
+          // Check if it's been toggled more than twice in 0.2 seconds
+          if (now - item.lastToggleTime <= 100) {
+            item.toggleCounter++;
+            if (item.toggleCounter > 1) {
+              $(item).addClass(selectors.activeClass);
+              return;
             }
-        });
-    }
-});
-    }
+          } else {
+            item.toggleCounter = 0;
+          }
 
-    setupTimeline();
+          item.lastToggleTime = now;
+
+          if (entry.isIntersecting) {
+            $(item).addClass(selectors.activeClass);
+          } else {
+            $(item).removeClass(selectors.activeClass);
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+        rootMargin: "0px",
+      }
+    );
+
+    selectors.item.each(function () {
+      observer.observe(this);
+    });
   };
 
-  // Render the timeline and initialize the plugin
+  // Initialize the timeline and navigation when document is ready
   $(document).ready(function () {
     renderTimeline();
     $("#timeline-1").timeline();
     setupHamburgerToggle();
-    setupNavigation(); 
+    setupNavigation();
   });
 })(jQuery);
