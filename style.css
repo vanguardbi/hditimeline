@@ -95,7 +95,7 @@ button {
   width: calc(50% - 40px);
   display: flex;
   position: relative;
-  transform: translateY(-20px);
+  /* transform: translateY(-10px); */
 }
 
 .timeline-item:before {

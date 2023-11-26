@@ -336,21 +336,21 @@
     var observer = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
-          var now = Date.now();
+          // var now = Date.now();
           var item = entry.target;
 
-          // Check if it's been toggled more than twice in 0.2 seconds
-          if (now - item.lastToggleTime <= 100) {
-            item.toggleCounter++;
-            if (item.toggleCounter > 1) {
-              $(item).addClass(selectors.activeClass);
-              return;
-            }
-          } else {
-            item.toggleCounter = 0;
-          }
+          // // Check if it's been toggled more than twice in 0.2 seconds
+          // if (now - item.lastToggleTime <= 100) {
+          //   item.toggleCounter++;
+          //   if (item.toggleCounter > 1) {
+          //     $(item).addClass(selectors.activeClass);
+          //     return;
+          //   }
+          // } else {
+          //   item.toggleCounter = 0;
+          // }
 
-          item.lastToggleTime = now;
+          // item.lastToggleTime = now;
 
           if (entry.isIntersecting) {
             $(item).addClass(selectors.activeClass);
@@ -360,7 +360,7 @@
         });
       },
       {
-        threshold: 0.6,
+        threshold: 0.5,
         rootMargin: "0px",
       }
     );
