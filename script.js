@@ -360,7 +360,7 @@
         });
       },
       {
-        threshold: 0.3,
+        threshold: 0.6,
         rootMargin: "0px",
       }
     );
