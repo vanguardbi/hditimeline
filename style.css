@@ -330,8 +330,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 60%;
-  height: 3px; /* Thickness of the bars */
+  width: 40%;
+  height: 2px; /* Thickness of the bars */
   background-color: white; /* Color of the bars */
 }
 
