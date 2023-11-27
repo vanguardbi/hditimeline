@@ -206,7 +206,8 @@ button {
 .demo-footer {
   padding: 60px 0;
   text-align: center;
-  background-color: #333333;
+  color: #333333;
+  background-color: #f5f5f5;
 }
 
 .demo-footer a {
@@ -257,7 +258,7 @@ button {
 .nav-item.active a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.2rem;
 }
 
 /* Colored Dots */
@@ -305,14 +306,14 @@ button {
   right: 10px;
   z-index: 2000; /* Ensures it's above other elements */
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   transition: transform 0.3s; /* Smooth transition for rotation */
   color: white;
   /* Circle around the icon */
   background-color: #333; /* Circle's background color */
   border-radius: 50%; /* Makes the background a circle */
-  width: 50px; /* Width of the circle */
-  height: 50px; /* Height of the circle */
+  width: 40px; /* Width of the circle */
+  height: 40px; /* Height of the circle */
   display: flex;
   justify-content: center; /* Center the icon horizontally */
   align-items: center; /* Center the icon vertically */
@@ -358,7 +359,7 @@ button {
     max-height: 100vh;
     max-width: 100vw;
     z-index: 3;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     transition: all 1s ease-in-out;
     transform: translateX(
       100%
