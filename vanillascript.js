@@ -10,96 +10,67 @@ document.addEventListener("DOMContentLoaded", () => {
   const timelineData = [
     {
       id: "1",
-      imageUrl:
-        "https://images.unsplash.com/photo-1682685797828-d3b2561deef4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl: "",
       year: "2004-2009",
       location: "Guyana",
       title: "Interactive Comic Book",
+      subtitle: "Super Gang and the Player",
       description:
-        'Super Gang and the Player -  Stay with your "sugar daddy" or leave. ',
-      category: "Game-Based Learning",
-    },
-    {
-      id: "2",
-      imageUrl:
-        "https://images.unsplash.com/photo-1682686581427-7c80ab60e3f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      year: "2008–2010",
-      location: "Pakistan",
-      title: "Interactive Voice Response",
-      description: "Hifazat: Because life is precious. Seek care or selfcare?",
+        "The reader gets to choose whether Stella stays with her “sugar daddy” or leaves and reclaims her life.",
       category: "Game-Based Learning",
     },
     {
       id: "3",
       imageUrl:
-        "https://images.unsplash.com/photo-1695653420508-f2481c1d783c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://drive.google.com/uc?export=view&id=1YL0IvtLQmmv4JRrOXgnCZO-vfAmUb5Xu",
       year: "2015 - 2019",
       location: "GLOBAL -24 Priority Countries",
       title: "THINK BIG: Point & Click Fever Game",
       description:
-        "Who or what influences Adamas choices to treat her  baby’s fever?",
+        "Trainers experience a Sub-Saharan African mother care-seeking journey on who or what influences her choices to treat her infant’s fever.",
       category: "Game-Based Learning",
     },
-    {
-      id: "4",
-      imageUrl:
-        "https://images.unsplash.com/photo-1682685796467-89a6f149f07a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      year: "2015 - 2019",
-      location: "COUNTRY",
-      title: "Digital Simulation",
-      description: "Choice based loop trail quest",
-      category: "Game-Based Learning",
-    },
-    {
-      id: "5",
-      imageUrl:
-        "https://images.unsplash.com/photo-1700463887323-732990f4540a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      year: "2018 - ONGOING",
-      location: "GLOBAL",
-      title: "GOC the project brand",
-      description:
-        "Gaming innovations to support young people as empowered choice-makers.",
-      category: "Game-Based Learning",
-    },
+
     {
       id: "6",
       imageUrl: "https://gameofchoicenotchance.com/i/image1.png",
       year: "2018 - ONGOING",
       location: "india",
-      title: "Mobile Game",
+      title: "Go Nisha Go",
       description:
-        "Digital Choice Based Simulation Go Nisha Go - A mobile Game to support young girls as empowered choice-makers.",
+        "An award-winning D2C Game co-created with youth that lets them discover, explore, learn and play their way toward becoming empowered choice-makers.",
       category: "Game-Based Learning",
     },
     {
       id: "7",
       imageUrl:
-        "https://plus.unsplash.com/premium_photo-1700583711364-ad77a9eba0b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      year: "Coming up 2024",
-      location: "india",
-      title: "Mobile Game",
-      description: "A Game for Boys, A Game for Girls in Nepal",
+        "https://drive.google.com/uc?export=view&id=1azsfD8nG8BWT932z68gWfeyWVg4qfRDD",
+      year: "2008–2010",
+      location: "Pakistan",
+      title:"Interactive Voice Response",
+      subtitle: "Hifazat: Because life is precious",
+      description: "Seamless health care solutions to the three delays for pregnant women and mothers: Geographic distance, lack of personal agency, and transportation.",
       category: "Game-Based Learning",
     },
 
     {
       id: "8",
       imageUrl:
-        "https://images.unsplash.com/photo-1682685797828-d3b2561deef4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      year: "1995",
-      location: "Bruma",
-      title: "Branded Condoms",
-      description: "Description",
+        "",   year: "2015–2019",
+      location: "USA, Great Falls National Park, Potomac, Maryland",
+      title: "Digital Simulation",
+      subtitle: "Loop trail quest",
+      description: "Exploring choice-making in shared spaces through Intervention and research to understand conservation behaviors.",
       category: "Demand Generation",
     },
     {
       id: "9",
       imageUrl:
         "https://images.unsplash.com/photo-1682686581427-7c80ab60e3f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      year: "1995",
-      location: "Bruma",
-      title: "Fuel-Efficient Stoves",
-      description: "Description",
+      year: "Coming up 2024",
+      location: "India",
+      title: "Mobile Games",
+      description: "A D2C Game to equip adolescent boys with the vocabulary and knowledge to approach and be intimate with girls and deal with rejection. A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being. ",
       category: "Demand Generation",
     },
     {
@@ -274,7 +245,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <img class="timeline__img" src="${item.imageUrl}" loading="lazy" />
             <div class="timeline__text" style="background-color: ${backgroundColor};">
               <h2 class="timeline__content-title">${item.year}<span> ${item.location} </span></h2>
-              <p class="timeline__content-desc"><span>${item.title}<br/></span>${item.description}</p>
+              <p class="timeline__content-desc"><span class="title">${item.title}<br/><br/></span></p>
+              <p class="timeline__content-desc"><span class="subtitle">${item.subtitle}<br/></span>${item.description}</p>
               <button>Read more</button>
             </div>
           </div>
@@ -319,9 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navItems.forEach((item) => {
       item.addEventListener("click", (event) => {
         // Remove active class from all nav items
-        navItems.forEach((navItem) =>
-          navItem.classList.remove("active")
-        );
+        navItems.forEach((navItem) => navItem.classList.remove("active"));
 
         // Add active class to the clicked nav item
         event.currentTarget.classList.add("active");

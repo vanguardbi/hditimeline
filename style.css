@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap');
 
 *,
 *::before,
@@ -8,6 +9,16 @@
 
 div#timeline-1 {
   transition: all 0.3s ease-in-out;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px; /* top/bottom and left/right padding */
+  background-color: rgb(236, 236, 236);
+  border: 0px solid #000; /* black border */
+  border-radius: 50px; /* rounded corners */
+  font-size: 12px; /* text size */
+  color: black; /* text color */
 }
 
 .timeline {
@@ -22,7 +33,7 @@ div#timeline-1 {
 .timeline__content-title {
   font-weight: normal;
   font-size: 24px;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   text-transform: uppercase;
 }
@@ -48,7 +59,7 @@ button {
   font-size: 15px;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.7);
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   line-height: 25px;
 }
@@ -98,7 +109,7 @@ button {
   position: absolute;
   color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   top: 70%;
   margin-top: -5px;
@@ -189,16 +200,16 @@ button {
 .timeline-header__title {
   color: #fff;
   font-size: 3rem;
-  font-family: 'Cardo', serif;
-  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   margin: 0;
 }
 
 .timeline-header__subtitle {
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   margin: 10px 0 0 0;
   font-weight: normal;
 }
@@ -305,7 +316,7 @@ button {
   top: 10px;
   right: 10px;
   z-index: 2000; /* Ensures it's above other elements */
-  cursor: pointer;
+  cursor: poMontserrat;
   font-size: 20px;
   transition: transform 0.3s; /* Smooth transition for rotation */
   color: white;
@@ -322,6 +333,16 @@ button {
 
 .hamburger-icon.active {
   transform: rotate(45deg); /* Rotates the icon */
+}
+
+span.subtitle{
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+span.title{
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .hamburger-icon.active::before,
