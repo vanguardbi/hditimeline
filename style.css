@@ -31,7 +31,7 @@ div#timeline-1 {
 .partnerBadge {
   display: inline-block;
   padding: 5px 10px; /* top/bottom and left/right padding */
-  background-color: #ddd;
+  background-color: #bbb;
   border: 0px solid #000; /* black border */
   border-radius: 50px; /* rounded corners */
   font-size: 12px; /* text size */
