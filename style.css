@@ -54,7 +54,7 @@ button {
   border-radius: 6px;
 }
 
-.timeline__content-desc {
+.desc {
   margin: 0;
   font-size: 15px;
   box-sizing: border-box;
@@ -100,6 +100,7 @@ button {
   display: flex;
   position: relative;
   transform: translateY(-10px);
+  color: white;
 }
 
 .timeline-item:before {
@@ -210,7 +211,7 @@ button {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   letter-spacing: 3px;
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
   font-weight: normal;
 }
 
@@ -335,7 +336,7 @@ button {
   transform: rotate(45deg); /* Rotates the icon */
 }
 
-span.subtitle{
+.subtitle{
   padding-top: 20px;
   font-weight: bold;
 }
