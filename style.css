@@ -142,9 +142,10 @@ button {
   color: white;
 }
 
-.timeline-item:before {
+/* .timeline-item:before {
   content: attr(data-text);
   letter-spacing: 3px;
+  min-height: 20px;
   width: 100%;
   position: absolute;
   color: rgba(255, 255, 255, 0.5);
@@ -156,7 +157,7 @@ button {
   padding-left: 15px;
   opacity: 0;
   right: calc(-100% - 40px);
-}
+} */
 
 .timeline-item:nth-child(even) {
   align-self: flex-end;
@@ -170,6 +171,7 @@ button {
   border-left: none;
   border-right: 2px solid rgba(255, 255, 255, 0.5);
   padding-right: 15px;
+  opacity: 1;
 }
 
 .timeline-item--active {
