@@ -620,7 +620,7 @@ document.addEventListener("DOMContentLoaded", () => {
         categorySettings[item.category].color || "#ffffff";
 
       const partnerContent = item.partner
-        ? `<span class = "partnerBadge">${item.partner}</span>`
+        ? `<span class = "partner">${item.partner}</span>`
         : "";
       const content = `
             <div class="timeline-item" data-text=".">

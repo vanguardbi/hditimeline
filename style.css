@@ -28,14 +28,12 @@ div#timeline-1 {
 
 }
 
-.partnerBadge {
+.partner {
   display: inline-block;
   padding: 5px 10px; /* top/bottom and left/right padding */
-  background-color: #bbb;
   border: 0px solid #000; /* black border */
-  border-radius: 50px; /* rounded corners */
-  font-size: 12px; /* text size */
-  color: #333;
+  border-radius: 50px; /* rounded corners */;
+  font-style: italic;
   margin-top: 20px;
 
 }
