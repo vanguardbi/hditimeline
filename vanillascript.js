@@ -598,7 +598,7 @@ document.addEventListener("DOMContentLoaded", () => {
         categorySettings[item.category].color || "#ffffff";
 
       const partnerContent = item.partner
-        ? `<span class = "partner">${item.partner}</span>`
+        ? `<span class="partner">${item.partner}</span>`
         : "";
       const content = `
             <div class="timeline-item" data-text=".">
@@ -609,7 +609,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <h2 class="timeline__content-title">${item.year}<span> ${item.location} ${sublocationContent}</span></h2>
                         <p class="timeline__content-desc"><span class="title">${item.title}<br/><br/></span></p>
                         ${detailsContent}
-                        <p>${partnerContent}</p>
+                        <p class="partnerContainer"> ${partnerContent}</p>
                         <button>Read more</button>
                     </div>
                 </div>
