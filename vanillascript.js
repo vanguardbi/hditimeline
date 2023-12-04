@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       id: "4",
-      imageUrl: "https://drive.google.com/uc?export=view&id=15Aa1O5Nez7gLEnGvrcvTQG3jEbeC6YLF",
+      imageUrl: "",
       year: "1995",
       location: "Nepal",
       title: "Injectable contraceptive distribution, retraining and certification",
