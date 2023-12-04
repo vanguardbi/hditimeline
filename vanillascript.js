@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle:
-            "IDEAL Oral Contraceptives (Vietnam) <br/><br/> Diamond Lady Oral Contraceptives (Cambodia) <br/><br/> Nava Jeevan (New Life Orange-flavored Oral Rehydration Salts for Children) (Nepal)",
+            "IDEAL Oral Contraceptives (Vietnam) <br/> Diamond Lady Oral Contraceptives (Cambodia) <br/> Nava Jeevan (New Life Orange-flavored Oral Rehydration Salts for Children) (Nepal)",
           description: `Aligning consumer benefits such as radiant skin, energy, prosperity, and vibrancy to promote health products.`,
         },
       ],
