@@ -570,7 +570,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderTimeline(category = "Full Timeline") {
     timelineContainer.innerHTML = ""; // Clear existing content
 
-    timelineData.forEach((item) => {
+    timelineData.reverse().forEach((item) => {
       if (category !== "Full Timeline" && item.category !== category) return;
 
     
