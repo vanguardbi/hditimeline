@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "",
       year: "1995",
       location: "Myanmar",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Branding of Condoms",
       category: "Branding & Demand Generation",
       partner: "PSI/UNICEF",
@@ -49,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "https://drive.google.com/uc?export=view&id=1zwsgjMH2rMSebr3HBeD9PZ1rYQoSdatz",
       year: "1995",
       location: "Myanmar",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Fuel-Efficient Stoves",
       category: "Branding & Demand Generation",
       partner: "PSI/UNDP/FAO",
@@ -67,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "https://drive.google.com/uc?export=view&id=15Aa1O5Nez7gLEnGvrcvTQG3jEbeC6YLF",
       year: "1995",
       location: "Nepal",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Injectable contraceptive distribution, retraining and certification",
       category: "Social Franchising of Health Services",
       details: [
@@ -85,7 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "",
       year: "1996-1998",
       location: "Nepal",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Condom and Animation Campaign",
       category: "Branding & Demand Generation",
       partner: "FHI360/USAID",
@@ -103,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "",
       year: "1998-99",
       location: "Nepal",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Mass Media Campaign",
       category: "Branding & Demand Generation",
       partner: "FHI360/USAID",
@@ -127,14 +122,8 @@ document.addEventListener("DOMContentLoaded", () => {
       partner: "Save the Children/UNICEF",
       details: [
         {
-      
           description:
-            `Mass media, feature films, and community engagement to promote immunizing women of reproductive age. <br/><br/> A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being.`,
-        },
-        {
-       
-          description:
-            " ",
+            `Mass media, feature films, and community engagement to promote immunizing women of reproductive age. A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being.`,
         },
       ],
     },
@@ -144,7 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "https://drive.google.com/uc?export=view&id=1ebcoDh98uUzvl2McOtlPweVUwvBp6MEO",
       year: "2001-2003",
       location: "Bangladesh",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Branding Campaign",
       category: "Branding & Demand Generation",
       partner: "FHI360/USAID",
@@ -198,7 +186,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "https://drive.google.com/uc?export=view&id=1nYTsmFtg0qNY13A7n9yJyiMCloSUKpna",
       year: "2003",
       location: "Bangladesh",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Branded Drop-in Centers",
       category: "Social Franchising of Health Services",
       partner: "FHI360/USAID",
@@ -216,7 +203,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "",
       year: "2003-2004",
       location: "COUNTRY",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "HIV testing and counselling spaces",
       category: "Social Franchising of Health Services",
       partner: "Marie Stopes International",
@@ -234,7 +220,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "https://drive.google.com/uc?export=view&id=1b_nCWh-oc3ncolne8gmKAINxCcDTO9Jf",
       year: "2003-2006",
       location: "Ethiopia",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "HIV Compassion Campaign",
       category: "Branding & Demand Generation",
       partner: "FHI360",
@@ -255,7 +240,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "https://drive.google.com/uc?export=view&id=15Aa1O5Nez7gLEnGvrcvTQG3jEbeC6YLF",
       year: "2004-2007",
       location: "Bangladesh",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Branded Drop-in Centers",
       category: "Social Franchising of Health Services",
       partner: "FHI360/ USAID",
@@ -311,7 +295,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "https://drive.google.com/uc?export=view&id=19Vb0kW92atUzYSE5l3CzhfuZncP4gxUF",
       year: "2004-2013",
       location: "Guyana",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Guyana Business Coalition",
       category: "Social Franchising of Health Services",
       partner: "FHI360/MSH PEPFAR/USAID",
@@ -329,7 +312,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "",
       year: "2007",
       location: "Rwanda",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Malaria Prevention",
       category: "Branding & Demand Generation",
       partner: "FHI360",
@@ -347,7 +329,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "",
       year: "2007-2010",
       location: "Bangladesh",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Health Clinics",
       category: "Social Franchising of Health Services",
       partner: "Chemonics/USAID",
@@ -383,7 +364,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "https://drive.google.com/uc?export=view&id=1xqoHJp7S_8ae5IaXHwN489AftTYYgve5",
       year: "2008-2010",
       location: "Pakistan",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Interactive voice response tool",
       category: "Social Franchising of Health Services",
       partner: "IRC/USAID",
@@ -442,7 +422,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "https://drive.google.com/uc?export=view&id=15Aa1O5Nez7gLEnGvrcvTQG3jEbeC6YLF",
       year: "2011-2014",
       location: "Bangladesh",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Strengthening Democratic Local Governance",
       category: "Branding & Demand Generation",
       partner: "ARD/Tetratech USAID",
@@ -551,7 +530,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "",
       year: "YEAR",
       location: "Nepal",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
       title: "Zoonotic disease prevention strategies",
       category: "Branding & Demand Generation",
       partner: "ARD/Now Tetratech",
@@ -597,7 +575,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
       const sublocationContent = item.sublocation
-        ? `<h4 class="sublocation">${item.sublocation}</h4>`
+        ? ` - ${item.sublocation}`
         : "";
 
       let detailsContent = "";
@@ -628,8 +606,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img class="timeline__img" src="${item.imageUrl}" loading="lazy" />
                     <div class="timeline__text" style="background-color: ${backgroundColor};">
                         <span class="badge">${item.category}</span>
-                        <h2 class="timeline__content-title">${item.year}<span> ${item.location} </span></h2>
-                        ${sublocationContent}
+                        <h2 class="timeline__content-title">${item.year}<span> ${item.location} ${sublocationContent}</span></h2>
                         <p class="timeline__content-desc"><span class="title">${item.title}<br/><br/></span></p>
                         ${detailsContent}
                         <p>${partnerContent}</p>
@@ -651,7 +628,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Setup Intersection Observer
   function setupIntersectionObserver() {
     const observerOptions = {
-      threshold: 0.3,
+      threshold: 0.4,
       rootMargin: "0px",
     };
 

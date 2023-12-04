@@ -30,11 +30,10 @@ div#timeline-1 {
 
 .partner {
   display: inline-block;
-  padding: 5px 10px; /* top/bottom and left/right padding */
+  padding: 10px 0px; /* top/bottom and left/right padding */
   border: 0px solid #000; /* black border */
   border-radius: 50px; /* rounded corners */;
   font-style: italic;
-  margin-top: 20px;
 
 }
 
@@ -54,7 +53,7 @@ div#timeline-1 {
 }
 
 .details{
-  margin-top: -10px;
+  margin-top: -35px;
 }
 
 .timeline__content-title {
@@ -77,7 +76,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin: 20px 0;
+  margin-top: 5px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -86,14 +85,13 @@ button {
   margin: 0;
   font-size: 15px;
   box-sizing: border-box;
-  color: rgba(255, 255, 255, 0.7);
   font-family: "Montserrat", sans-serif;
   /* font-weight: normal; */
   line-height: 25px;
 }
 
 .timeline__content-desc {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .timeline__content-desc span {
@@ -102,7 +100,7 @@ button {
 
 .timeline__text {
   background-color: #7d1e57;
-  padding: 2em;
+  padding: 3em 2em ;
   margin-top: -10px;
 }
 
