@@ -8,11 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburgerIcon = document.getElementById("hamburger-icon");
   const floatingNav = document.getElementById("floating-nav");
   const timelineData = [
-
     {
       id: "1",
       imageUrl: "",
-      year: "1995-2002",
+      year: "2024",
       location: "Vietnam, Cambodia, Nepal",
       title: "Product Branding and Distribution",
       category: "Branding & Demand Generation",
@@ -37,15 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "APHAW Branded Condoms",
-          description:
-            `Position the brand as a trusted friend resulting in it becoming the largest selling condom in Asia. `,
-        }
+          description: `Position the brand as a trusted friend resulting in it becoming the largest selling condom in Asia. `,
+        },
       ],
     },
 
     {
       id: "3",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1zwsgjMH2rMSebr3HBeD9PZ1rYQoSdatz",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=1zwsgjMH2rMSebr3HBeD9PZ1rYQoSdatz",
       year: "1995",
       location: "Myanmar",
       title: "Fuel-Efficient Stoves",
@@ -54,9 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "A-1 Savings",
-          description:
-            `Texaco-funded women’s pottery cooperative initiative to produce and sell stoves to reduce deforestation and in-door smoke.`,
-        }
+          description: `Texaco-funded women’s pottery cooperative initiative to produce and sell stoves to reduce deforestation and in-door smoke.`,
+        },
       ],
     },
 
@@ -65,17 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "",
       year: "1995",
       location: "Nepal",
-      title: "Injectable contraceptive distribution, retraining and certification",
+      title:
+        "Injectable contraceptive distribution, retraining and certification",
       category: "Social Franchising of Health Services",
       details: [
         {
           subtitle: "Sangini Three Monthly",
-          description:
-            `A global first over-the-counter contraceptive distributed through a network of branded pharmacies with quality assured through mystery shopper checks.`,
-        }
+          description: `A global first over-the-counter contraceptive distributed through a network of branded pharmacies with quality assured through mystery shopper checks.`,
+        },
       ],
     },
-
 
     {
       id: "5",
@@ -88,9 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Dhaali Dai",
-          description:
-            `Dual protection engagement using humor and animation.`,
-        }
+          description: `Dual protection engagement using humor and animation.`,
+        },
       ],
     },
 
@@ -105,12 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Action Stop AIDS (ASA)",
-          description:
-            `Mass media communication and private sector partnerships to promote AIDS prevention.`,
-        }
+          description: `Mass media communication and private sector partnerships to promote AIDS prevention.`,
+        },
       ],
     },
-
 
     {
       id: "5",
@@ -122,15 +116,15 @@ document.addEventListener("DOMContentLoaded", () => {
       partner: "Save the Children/UNICEF",
       details: [
         {
-          description:
-            `Mass media, feature films, and community engagement to promote immunizing women of reproductive age. A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being.`,
+          description: `Mass media, feature films, and community engagement to promote immunizing women of reproductive age. A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being.`,
         },
       ],
     },
 
     {
       id: "5",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1ebcoDh98uUzvl2McOtlPweVUwvBp6MEO",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=1ebcoDh98uUzvl2McOtlPweVUwvBp6MEO",
       year: "2001-2003",
       location: "Bangladesh",
       title: "Branding Campaign",
@@ -139,12 +133,10 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Bajee Quddus Wanna bet?",
-          description:
-            `HIV awareness campaign that leveraged humor and Bollywood-style character.`,
-        }
+          description: `HIV awareness campaign that leveraged humor and Bollywood-style character.`,
+        },
       ],
     },
-
 
     {
       id: "5",
@@ -157,12 +149,10 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "National New-born Care Strategy",
-          description:
-            `National policy guidance and ideation and implementation support to women entrepreneurs for clean birthing kits`,
-        }
+          description: `National policy guidance and ideation and implementation support to women entrepreneurs for clean birthing kits`,
+        },
       ],
     },
-
 
     {
       id: "5",
@@ -175,15 +165,15 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "",
-          description:
-            `National policy guidance on Maternal Newborn health`,
-        }
+          description: `National policy guidance on Maternal Newborn health`,
+        },
       ],
     },
 
     {
       id: "5",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1nYTsmFtg0qNY13A7n9yJyiMCloSUKpna",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=1nYTsmFtg0qNY13A7n9yJyiMCloSUKpna",
       year: "2003",
       location: "Bangladesh",
       title: "Branded Drop-in Centers",
@@ -192,9 +182,8 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Modhumita (Sweet Friend)",
-          description:
-            `160 customized lounges and meeting places that attracted marginalized populations for testing and treatment for STIs including HIV.`,
-        }
+          description: `160 customized lounges and meeting places that attracted marginalized populations for testing and treatment for STIs including HIV.`,
+        },
       ],
     },
 
@@ -209,15 +198,15 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Café corners",
-          description:
-            `HIV testing and counselling corners in coffee shops.`,
-        }
+          description: `HIV testing and counselling corners in coffee shops.`,
+        },
       ],
     },
 
     {
       id: "5",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1b_nCWh-oc3ncolne8gmKAINxCcDTO9Jf",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=1b_nCWh-oc3ncolne8gmKAINxCcDTO9Jf",
       year: "2003-2006",
       location: "Ethiopia",
       title: "HIV Compassion Campaign",
@@ -226,18 +215,15 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Demand Generation for HIV Testing",
-          description:
-            `Partnership with Coca-Cola Foundation and award-winning Music Video montage of National Celebrities.`,
-        }
+          description: `Partnership with Coca-Cola Foundation and award-winning Music Video montage of National Celebrities.`,
+        },
       ],
     },
 
-    
-
-
     {
       id: "5",
-      imageUrl: "https://drive.google.com/uc?export=view&id=15Aa1O5Nez7gLEnGvrcvTQG3jEbeC6YLF",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=15Aa1O5Nez7gLEnGvrcvTQG3jEbeC6YLF",
       year: "2004-2007",
       location: "Bangladesh",
       title: "Branded Drop-in Centers",
@@ -246,13 +232,10 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Modhumita (Sweet Friend)",
-          description:
-            `160 customized lounges and meeting places that attracted marginalized populations for testing and treatment for STIs including HIV.`,
-        }
+          description: `160 customized lounges and meeting places that attracted marginalized populations for testing and treatment for STIs including HIV.`,
+        },
       ],
     },
-
-
 
     {
       id: "3",
@@ -273,7 +256,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       id: "5",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1Q_5S9KczHaTEjnXIDNMgAViBCzBejdWx",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=1Q_5S9KczHaTEjnXIDNMgAViBCzBejdWx",
       year: "2004-2013",
       location: "Guyana",
       sublocation: "HIV/AIDS Prevention Project (GHARP I)",
@@ -283,16 +267,15 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Don't Dis Me",
-          description:
-            `Communications from Comic Books to Rock Concerts aimed at adolescents and young adults, from to address stigma, testing, prevention, treatment, care, and support.`,
-        }
+          description: `Communications from Comic Books to Rock Concerts aimed at adolescents and young adults, from to address stigma, testing, prevention, treatment, care, and support.`,
+        },
       ],
     },
 
-
     {
       id: "5",
-      imageUrl: "https://drive.google.com/uc?export=view&id=19Vb0kW92atUzYSE5l3CzhfuZncP4gxUF",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=19Vb0kW92atUzYSE5l3CzhfuZncP4gxUF",
       year: "2004-2013",
       location: "Guyana",
       title: "Guyana Business Coalition",
@@ -301,9 +284,8 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "A coalition of 43 businesses",
-          description:
-            `Businesses unite to provide HIV testing, workplace training, transportation, insurance, and other support needs. Shared learnings and partnerships with Thai and S. Africa Business Coalitions.`,
-        }
+          description: `Businesses unite to provide HIV testing, workplace training, transportation, insurance, and other support needs. Shared learnings and partnerships with Thai and S. Africa Business Coalitions.`,
+        },
       ],
     },
 
@@ -318,9 +300,8 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Indoor Residual Spraying (IRS)",
-          description:
-            `Behavior change strategies to support efficacy of IRS`,
-        }
+          description: `Behavior change strategies to support efficacy of IRS`,
+        },
       ],
     },
 
@@ -335,9 +316,8 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Smiling Sun Clinic",
-          description:
-            `Branding refresh and outreach of health clinics to appeal to young married couples.`,
-        }
+          description: `Branding refresh and outreach of health clinics to appeal to young married couples.`,
+        },
       ],
     },
 
@@ -358,10 +338,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
     },
 
-
     {
       id: "5",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1xqoHJp7S_8ae5IaXHwN489AftTYYgve5",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=1xqoHJp7S_8ae5IaXHwN489AftTYYgve5",
       year: "2008-2010",
       location: "Pakistan",
       title: "Interactive voice response tool",
@@ -370,16 +350,15 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "Hifazat: Because Life is Precious",
-          description:
-            `Branded ‘uber-style’ taxis take pregnant women to care, where trained providers and certified health centers provide 24/7 seamless healthcare under this umbrella brand of protection.`,
-        }
+          description: `Branded ‘uber-style’ taxis take pregnant women to care, where trained providers and certified health centers provide 24/7 seamless healthcare under this umbrella brand of protection.`,
+        },
       ],
     },
 
-
     {
       id: "5",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1pSzvAYc5OIcBlrOjk2hI7eB5Hlf5Plo5",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=1pSzvAYc5OIcBlrOjk2hI7eB5Hlf5Plo5",
       year: "2010-2012",
       location: "Ethiopia",
       title: "Smart and Strong",
@@ -388,17 +367,15 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "",
-          description:
-            `Alive & Thrive Campaign to engage men and leverage agricultural and WASH sectors in optimal infant and young child feeding practices.`,
-        }
+          description: `Alive & Thrive Campaign to engage men and leverage agricultural and WASH sectors in optimal infant and young child feeding practices.`,
+        },
       ],
     },
 
-      
-
     {
       id: "5",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1LX9hj8E9ZpVNBmhZ0g2aeMYD0a2GZz8J",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=1LX9hj8E9ZpVNBmhZ0g2aeMYD0a2GZz8J",
       year: "2011-2013",
       location: "Caribbean Region",
       sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
@@ -407,19 +384,16 @@ document.addEventListener("DOMContentLoaded", () => {
       partner: "Options/KfW",
       details: [
         {
-          subtitle: "Friends",
-          description:
-            `Mobilization of community and youth engagement to support People Living with AIDS`,
-        }
+          subtitle: "Friendz",
+          description: `Mobilization of community and youth engagement to support People Living with AIDS`,
+        },
       ],
     },
 
-
-
-   
     {
       id: "5",
-      imageUrl: "https://drive.google.com/uc?export=view&id=15Aa1O5Nez7gLEnGvrcvTQG3jEbeC6YLF",
+      imageUrl:
+        "https://drive.google.com/uc?export=view&id=15Aa1O5Nez7gLEnGvrcvTQG3jEbeC6YLF",
       year: "2011-2014",
       location: "Bangladesh",
       title: "Strengthening Democratic Local Governance",
@@ -428,12 +402,10 @@ document.addEventListener("DOMContentLoaded", () => {
       details: [
         {
           subtitle: "We are the government",
-          description:
-            `Creating demand for good governance and citizen engagement among youth and women through mass media, social media, citizen reporting and engagement of journalists.`,
-        }
+          description: `Creating demand for good governance and citizen engagement among youth and women through mass media, social media, citizen reporting and engagement of journalists.`,
+        },
       ],
     },
-
 
     {
       id: "2",
@@ -468,8 +440,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
     },
 
-
-
     {
       id: "5",
       imageUrl: "",
@@ -486,8 +456,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ],
     },
-
-
 
     {
       id: "3",
@@ -514,16 +482,10 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "Game-Based Learning",
       details: [
         {
-          description:
-            `A D2C Game to equip adolescent boys with the vocabulary and knowledge to approach and be intimate with girls and deal with rejection <br/><br/>A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being. ` ,
+          description: `A D2C Game to equip adolescent boys with the vocabulary and knowledge to approach and be intimate with girls and deal with rejection <br/><br/>A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being. `,
         },
-       
       ],
     },
-
- 
-
-   
 
     {
       id: "5",
@@ -535,18 +497,15 @@ document.addEventListener("DOMContentLoaded", () => {
       partner: "ARD/Now Tetratech",
       details: [
         {
-          description:
-            ` `,
-        }
+          description: ` `,
+        },
       ],
     },
-
-
   ];
 
   const categorySettings = {
     "Full Timeline": {
-      color: "#333",
+      color: "#f8f8f8",
       backgroundImage:
         "https://images.unsplash.com/photo-1571053748382-141b7de59b88?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -573,18 +532,15 @@ document.addEventListener("DOMContentLoaded", () => {
     timelineData.reverse().forEach((item) => {
       if (category !== "Full Timeline" && item.category !== category) return;
 
-    
       const sublocationContent = item.sublocation
         ? ` - ${item.sublocation}`
         : "";
 
       let detailsContent = "";
       item.details.forEach((detail) => {
-
         const subtitle = detail.subtitle
-        ? `<p class="subtitle">${detail.subtitle}</p>`
-        : "";
-
+          ? `<p class="subtitle">${detail.subtitle}</p>`
+          : "";
 
         detailsContent += `
                 <div class = "details">
@@ -595,25 +551,38 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       const backgroundColor =
-        categorySettings[item.category].color || "#ffffff";
+        // categorySettings[item.category].color || "rgba(0,0,0,0)";
+        "rgba(0,0,0,0)";
+
+      const dividerColor =
+        categorySettings[item.category].color || "rgba(0,0,0,0)";
 
       const partnerContent = item.partner
         ? `<span class="partner">${item.partner}</span>`
         : "";
       const content = `
-            <div class="timeline-item" data-text=".">
-                <div class="timeline__content">
+ 
+          <div class="timeline-item" data-text="${item.year}">     
+          <div class="year">
+              <h3>${item.year}</h3> 
+              <div class="dot"></div>         
+          </div>     
+              <div class="timeline__content">
                     <img class="timeline__img" src="${item.imageUrl}" loading="lazy" />
                     <div class="timeline__text" style="background-color: ${backgroundColor};">
-                        <span class="badge">${item.category}</span>
-                        <h2 class="timeline__content-title">${item.year}<span> ${item.location} ${sublocationContent}</span></h2>
-                        <p class="timeline__content-desc"><span class="title">${item.title}<br/><br/></span></p>
-                        ${detailsContent}
-                        <p class="partnerContainer"> ${partnerContent}</p>
-                        <button>Read more</button>
+                      <div class="title_content">
+                            <span class="category">${item.category}</span>
+                            <div class="divider" style="background-color: ${dividerColor};"></div>
+                            <p class="location">${item.location} ${sublocationContent}<span> </span></p>
+                      </div>
+                      <p class="title">${item.title}</p> 
+                      ${detailsContent}
+                      <p class="partnerContainer"> ${partnerContent}</p>
+                      <button style="background-color: ${dividerColor};">Read more</button>
                     </div>
-                </div>
-            </div>
+              </div>
+          </div>
+ 
         `;
       timelineContainer.insertAdjacentHTML("beforeend", content);
     });
@@ -626,9 +595,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Setup Intersection Observer
-  function setupIntersectionObserver() {
+  function oldSetupIntersectionObserver() {
     const observerOptions = {
-      threshold: 0.4,
+      threshold: 0.6,
       rootMargin: "0px",
     };
 
@@ -636,6 +605,45 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("timeline-item--active");
+          const imageUrl = entry.target.querySelector(".timeline__img").src;
+          wholePage.style.backgroundImage = `url(${imageUrl})`;
+        } else {
+          entry.target.classList.remove("timeline-item--active");
+        }
+      });
+    }, observerOptions);
+
+    document
+      .querySelectorAll(".timeline-item")
+      .forEach((item) => observer.observe(item));
+  }
+
+  // Setup Intersection Observer
+  function setupIntersectionObserver() {
+    const observerOptions = {
+      threshold: [0, 0.25, 0.5, 0.75, 1],
+      // Removed rootMargin from here
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        const viewportHeight = window.innerHeight;
+        const itemHeight = entry.target.clientHeight;
+        const rootMarginValue = Math.floor((viewportHeight - itemHeight) / 2);
+        const rootMargin = `${rootMarginValue}px 0px`;
+
+        // Update the rootMargin for the current entry dynamically
+        observer.unobserve(entry.target);
+        observer.observe(entry.target, { ...observerOptions, rootMargin });
+
+        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+          document
+            .querySelectorAll(".timeline-item--active")
+            .forEach((activeElement) => {
+              activeElement.classList.remove("timeline-item--active");
+            });
+          entry.target.classList.add("timeline-item--active");
+
           const imageUrl = entry.target.querySelector(".timeline__img").src;
           wholePage.style.backgroundImage = `url(${imageUrl})`;
         } else {

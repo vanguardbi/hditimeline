@@ -15,18 +15,11 @@ h4{
 }
 
 div#timeline-1 {
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
 
-.badge {
-  display: inline-block;
-  padding: 5px 10px; /* top/bottom and left/right padding */
-  background-color: #333;
-  border: 0px solid #000; /* black border */
-  border-radius: 6px; /* rounded corners */
-  font-size: 12px; /* text size */
-  max-width: 80%;
-
+.category {
+  font-weight: bold;
 }
 
 .partnerContainer {
@@ -46,6 +39,7 @@ div#timeline-1 {
   text-transform: uppercase;
   margin-top: -10px;
   font-size: 0.8em;
+ 
 }
 
 .timeline {
@@ -55,6 +49,7 @@ div#timeline-1 {
   flex-direction: column;
   max-width: 1000px;
   position: relative;
+  width: 100%;
 }
 
 .details{
@@ -62,19 +57,8 @@ div#timeline-1 {
   margin-bottom: 35px;
 }
 
-.timeline__content-title {
 
-  font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  margin-top: 5px;
- 
-}
 
-.timeline__content-title span {
-  font-weight: bold;
-}
 
 button {
   border: none;
@@ -109,18 +93,21 @@ button {
 
 .timeline__text {
   background-color: #7d1e57;
-  padding: 3em 2em ;
+  padding: 3em 0em ;
   margin-top: -10px;
+  width: 600px;
+
 }
 
 .timeline:before {
   position: absolute;
-  left: 50%;
+  left: 30%;
   width: 2px;
   height: 100%;
   margin-left: -1px;
   content: "";
-  background: rgba(255, 255, 255, 0.07);
+  /* background: rgba(255, 255, 255, 0.07); */
+  background: #f8f8f8;
 }
 
 @media only screen and (max-width: 767px) {
@@ -129,17 +116,22 @@ button {
   }
 }
 
+
+
 .timeline-item {
   padding: 40px 0;
   opacity: 0.3;
   /* filter: blur(2px); */
   transition: 0.5s;
   box-sizing: border-box;
-  width: calc(50% - 40px);
+  width: calc(66% -0px);
   display: flex;
   position: relative;
   transform: translateY(-10px);
   color: white;
+  align-self: center;
+  margin-left: 310px;
+
 }
 
 /* .timeline-item:before {
@@ -149,41 +141,102 @@ button {
   width: 100%;
   position: absolute;
   color: rgba(255, 255, 255, 0.5);
+  color: #f8f8f8;
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
   border-left: 2px solid rgba(255, 255, 255, 0.5);
-  top: 70%;
+  top: 50%;
   margin-top: -5px;
   padding-left: 15px;
   opacity: 0;
   right: calc(-100% - 40px);
 } */
 
-.timeline-item:nth-child(even) {
-  align-self: flex-end;
+.year{
+  /* content: attr(data-text); */
+  /* letter-spacing: 3px; */
+  /* min-height: 20px;
+  width: 100%; */
+  position: absolute;
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: #f8f8f8;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  /* top: 50%; */
+  /* margin-top: -5px; */
+  padding-left: 15px; 
+  left: calc(-124.1%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  z-index: 3;
 }
 
-.timeline-item:nth-child(even):before {
-  right: auto;
+.year h3 {
+  width: 632px;
+  font-weight: bold;
   text-align: right;
-  left: calc(-100% - 40px);
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline-item--active .year h3 {
+  font-size: 2.5em;
+}
+
+
+
+.year div{
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 100%;
+  position: absolute;
+  left: calc(105%);
+}
+
+.timeline-item--active .year div {
+  background-color: #f8f8f8;
+}
+
+.timeline-item::before {
+  right: auto;
+  text-align: right; 
+  /* left: calc(-100% - 40px); */
   padding-left: 0;
   border-left: none;
   border-right: 2px solid rgba(255, 255, 255, 0.5);
-  padding-right: 15px;
+  padding-right: 50px;
   opacity: 1;
+  left: -109.5%;
+  font-size: large;
+  color: white;
+  transition: opacity 0.3s ease, top 0.3s ease, font-size 0.3s ease; 
+
 }
+
+
 
 .timeline-item--active {
   opacity: 1;
   transform: translateY(0);
-  /* filter: blur(0px); */
 }
 
-.timeline-item--active:before {
+
+
+.timeline-item--active::before {
   top: 50%;
-  transition: 0.3s all 0.2s;
+
   opacity: 1;
+  font-size: 3em;
+  font-weight: bold;
+
+}
+
+div.divider{
+  width:100%;
+  height: 6px;  
+  margin: 10px 0px;
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -210,6 +263,7 @@ button {
 .timeline__img {
   max-width: 100%;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  display: none;
 }
 
 .timeline-container {
@@ -228,7 +282,7 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(99, 99, 99, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   content: "";
 }
 
@@ -270,8 +324,8 @@ button {
 /* Common Styles for All Screens */
 #floating-nav .items-container {
   position: fixed;
-  top: 3vh;
-  right: 0px; /* Align to the top right corner */
+  top: 5vh;
+  left: 5vh; /* Align to the top right corner */
   border-radius: 10px;
   z-index: 1000;
   display: flex;
@@ -297,6 +351,7 @@ button {
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   font-size: 1em;
+  margin: 10px;
 }
 
 .nav-item a:hover {
@@ -320,8 +375,8 @@ button {
 .nav-item[data-category="Social Franchising of Health Services"]::before,
 .nav-item[data-category="Full Timeline"]::before {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   position: absolute;
   left: 0;
@@ -349,7 +404,7 @@ button {
 }
 
 .nav-item[data-category="Full Timeline"]::before {
-  background-color: #333333;
+  background-color: #f8f8f8;
 }
 
 .hamburger-icon {
@@ -377,17 +432,46 @@ button {
   transform: rotate(45deg); /* Rotates the icon */
 }
 
+.title_content{
+  font-size: 1.3em;
+}
+
+
+.title{
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 40px 0px;
+  line-height: normal;
+}
+
 .subtitle{
   margin: 0px;
   padding: 0px;
   padding-top: 20px;
   font-weight: bold;
+  font-size: 2em;
 }
 
 span.title{
   font-weight: bold;
   font-size: 1.2em;
 }
+
+.location {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.location span {
+  font-weight: bold;
+}
+
+.desc{
+  /* margin: 40px 0px; */
+}
+
 
 .hamburger-icon.active::before,
 .hamburger-icon.active::after {
@@ -472,4 +556,18 @@ span.title{
   .timeline-header__title {
     font-size: 2.2rem;
   }
+
+  .timeline-item {
+    margin: 0px;
+    flex-direction: column;
+  }
+
+  .year{
+   
+    font-size: 2em;
+    position: relative;
+    flex-direction: row;
+   
+  }
+
 }
