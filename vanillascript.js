@@ -10,497 +10,540 @@ document.addEventListener("DOMContentLoaded", () => {
   const timelineData = [
     {
       id: "1",
-      imageUrl: "",
       year: "2024",
-      location: "Vietnam, Cambodia, Nepal",
-      title: "Product Branding and Distribution",
-      category: "Branding & Demand Generation",
+      location: "India",
+      title: "MOBILE GAME",
+      category: "Game-Based Learning",
       details: [
         {
-          subtitle:
-            "IDEAL Oral Contraceptives (Vietnam) <br/> Diamond Lady Oral Contraceptives (Cambodia) <br/> Nava Jeevan (New Life Orange-flavored Oral Rehydration Salts for Children) (Nepal)",
-          description: `Aligning consumer benefits such as radiant skin, energy, prosperity, and vibrancy to promote health products.`,
+          subtitle: "Coming Up: A Game for Boys",
+          description: `A D2C Game to equip adolescent boys with the vocabulary and knowledge to approach and be intimate with girls and deal with rejection. 
+          `,
         },
       ],
-      partner: "KfW (German Development Bank)",
     },
 
     {
       id: "2",
-      imageUrl: "",
-      year: "1995",
-      location: "Myanmar",
-      title: "Branding of Condoms",
-      category: "Branding & Demand Generation",
+      year: "2024",
+      location: "Nepal",
+      title: "Mobile Game",
+      category: "Game-Based Learning",
       partner: "PSI/UNICEF",
       details: [
         {
-          subtitle: "APHAW Branded Condoms",
-          description: `Position the brand as a trusted friend resulting in it becoming the largest selling condom in Asia. `,
+          subtitle: "Coming Up: A game for Girls",
+          description: `A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being. 
+          `,
         },
       ],
     },
 
     {
       id: "3",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=1zwsgjMH2rMSebr3HBeD9PZ1rYQoSdatz",
-      year: "1995",
-      location: "Myanmar",
-      title: "Fuel-Efficient Stoves",
-      category: "Branding & Demand Generation",
+      year: "2018–Ongoing",
+      location: "India",
+      title: "Mobile Game",
+      category: "Game-Based Learning",
       partner: "PSI/UNDP/FAO",
       details: [
         {
-          subtitle: "A-1 Savings",
-          description: `Texaco-funded women’s pottery cooperative initiative to produce and sell stoves to reduce deforestation and in-door smoke.`,
+          subtitle: "Go Nisha Go",
+          description: `An award-winning D2C Game co-created with youth that lets them discover, explore, learn and play their way toward becoming empowered choice-makers.`,
         },
       ],
     },
 
     {
       id: "4",
-      imageUrl: "",
-      year: "1995",
-      location: "Nepal",
-      title:
-        "Injectable contraceptive distribution, retraining and certification",
-      category: "Social Franchising of Health Services",
-      details: [
-        {
-          subtitle: "Sangini Three Monthly",
-          description: `A global first over-the-counter contraceptive distributed through a network of branded pharmacies with quality assured through mystery shopper checks.`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl: "",
-      year: "1996-1998",
-      location: "Nepal",
-      title: "Condom and Animation Campaign",
-      category: "Branding & Demand Generation",
-      partner: "FHI360/USAID",
-      details: [
-        {
-          subtitle: "Dhaali Dai",
-          description: `Dual protection engagement using humor and animation.`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl: "",
-      year: "1998-99",
-      location: "Nepal",
-      title: "Mass Media Campaign",
-      category: "Branding & Demand Generation",
-      partner: "FHI360/USAID",
-      details: [
-        {
-          subtitle: "Action Stop AIDS (ASA)",
-          description: `Mass media communication and private sector partnerships to promote AIDS prevention.`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl: "",
-      year: "2001-2004",
-      location: "Pakistan & Ethiopia",
-      title: "Tetanus Immunization Campaigns",
-      category: "Branding & Demand Generation",
-      partner: "Save the Children/UNICEF",
-      details: [
-        {
-          description: `Mass media, feature films, and community engagement to promote immunizing women of reproductive age. A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being.`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=1ebcoDh98uUzvl2McOtlPweVUwvBp6MEO",
-      year: "2001-2003",
-      location: "Bangladesh",
-      title: "Branding Campaign",
-      category: "Branding & Demand Generation",
-      partner: "FHI360/USAID",
-      details: [
-        {
-          subtitle: "Bajee Quddus Wanna bet?",
-          description: `HIV awareness campaign that leveraged humor and Bollywood-style character.`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl: "",
-      year: "2001-2004",
-      location: "Nepal",
-      title: "Clean Delivery Product",
-      category: "Branding & Demand Generation",
-      partner: "Save the Children/UNICEF",
-      details: [
-        {
-          subtitle: "National New-born Care Strategy",
-          description: `National policy guidance and ideation and implementation support to women entrepreneurs for clean birthing kits`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl: "",
-      year: "2003",
-      location: "Malawi",
-      title: "Policy Guidance",
-      category: "Branding & Demand Generation",
-      partner: "Save the Children",
-      details: [
-        {
-          subtitle: "",
-          description: `National policy guidance on Maternal Newborn health`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=1nYTsmFtg0qNY13A7n9yJyiMCloSUKpna",
-      year: "2003",
-      location: "Bangladesh",
-      title: "Branded Drop-in Centers",
-      category: "Social Franchising of Health Services",
-      partner: "FHI360/USAID",
-      details: [
-        {
-          subtitle: "Modhumita (Sweet Friend)",
-          description: `160 customized lounges and meeting places that attracted marginalized populations for testing and treatment for STIs including HIV.`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl: "",
-      year: "2003-2004",
-      location: "COUNTRY",
-      title: "HIV testing and counselling spaces",
-      category: "Social Franchising of Health Services",
-      partner: "Marie Stopes International",
-      details: [
-        {
-          subtitle: "Café corners",
-          description: `HIV testing and counselling corners in coffee shops.`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=1b_nCWh-oc3ncolne8gmKAINxCcDTO9Jf",
-      year: "2003-2006",
-      location: "Ethiopia",
-      title: "HIV Compassion Campaign",
-      category: "Branding & Demand Generation",
-      partner: "FHI360",
-      details: [
-        {
-          subtitle: "Demand Generation for HIV Testing",
-          description: `Partnership with Coca-Cola Foundation and award-winning Music Video montage of National Celebrities.`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=15Aa1O5Nez7gLEnGvrcvTQG3jEbeC6YLF",
-      year: "2004-2007",
-      location: "Bangladesh",
-      title: "Branded Drop-in Centers",
-      category: "Social Franchising of Health Services",
-      partner: "FHI360/ USAID",
-      details: [
-        {
-          subtitle: "Modhumita (Sweet Friend)",
-          description: `160 customized lounges and meeting places that attracted marginalized populations for testing and treatment for STIs including HIV.`,
-        },
-      ],
-    },
-
-    {
-      id: "3",
-      imageUrl: "",
-      year: "2004-2009",
-      location: "Guyana",
-      title: "Interactive Comic Book",
+      year: "2015–2019",
+      location: " USA, Great Falls National Park, Potomac, Maryland",
+      title: "Digital Simulation",
       category: "Game-Based Learning",
       details: [
         {
-          subtitle: "Super Gang and the Player",
-          description:
-            "The reader gets to choose whether Stella stays with her “sugar daddy” or leaves and reclaims her life.",
-        },
-        // Additional details can be added here
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=1Q_5S9KczHaTEjnXIDNMgAViBCzBejdWx",
-      year: "2004-2013",
-      location: "Guyana",
-      sublocation: "HIV/AIDS Prevention Project (GHARP I)",
-      title: "Multi-Media Interventions",
-      category: "Branding & Demand Generation",
-      partner: "FHI360/USAID PEPFAR",
-      details: [
-        {
-          subtitle: "Don't Dis Me",
-          description: `Communications from Comic Books to Rock Concerts aimed at adolescents and young adults, from to address stigma, testing, prevention, treatment, care, and support.`,
+          subtitle: "Loop Trail Quest",
+          description: `Exploring choice-making in shared spaces through a digital simulation with embedded research to understand behaviors that can put in motion triggers that cause the spread of zoonotic disease (tick-borne and mosquito borne diseases). Traditional booklets and videos were used to compare the impact of digital simulations.
+          `,
         },
       ],
     },
 
     {
       id: "5",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=19Vb0kW92atUzYSE5l3CzhfuZncP4gxUF",
-      year: "2004-2013",
-      location: "Guyana",
-      title: "Guyana Business Coalition",
-      category: "Social Franchising of Health Services",
-      partner: "FHI360/MSH PEPFAR/USAID",
+      year: "2015–2019",
+      location: "GLOBAL - 24 Priority Countries",
+      title: "Games for Intervention Design",
+      category: "Game-Based Learning",
       details: [
         {
-          subtitle: "A coalition of 43 businesses",
-          description: `Businesses unite to provide HIV testing, workplace training, transportation, insurance, and other support needs. Shared learnings and partnerships with Thai and S. Africa Business Coalitions.`,
+          subtitle: "Point & click fever game",
+          description: `Trainers experience a Sub-Saharan African mother’s care-seeking journey and  who or what influences her choices to treat her infant’s fever.`,
+        },
+        {
+          subtitle: `Factors Card Game`,
+          description: `A  “scattergories” game where program planners learn the interplay of structural, social,and  internal factors in individual decision-making.`,
+        },
+        {
+          subtitle: "Chutes & Ladders",
+          description: `Planners learn through play how different health conditions and diseases can be impacted by multi-faceted factors.
+          `,
+        },
+        {
+          subtitle: "Story Dice",
+          description: `Players learn how random factors and circumstances can impact the best planned interventions. 
+          `,
         },
       ],
     },
 
     {
-      id: "5",
-      imageUrl: "",
-      year: "2007",
-      location: "Rwanda",
-      title: "Malaria Prevention",
-      category: "Branding & Demand Generation",
-      partner: "FHI360",
-      details: [
-        {
-          subtitle: "Indoor Residual Spraying (IRS)",
-          description: `Behavior change strategies to support efficacy of IRS`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl: "",
-      year: "2007-2010",
-      location: "Bangladesh",
-      title: "Health Clinics",
-      category: "Social Franchising of Health Services",
-      partner: "Chemonics/USAID",
-      details: [
-        {
-          subtitle: "Smiling Sun Clinic",
-          description: `Branding refresh and outreach of health clinics to appeal to young married couples.`,
-        },
-      ],
-    },
-
-    {
-      id: "4",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=180vIgx2d3l4y2ACMS9gc7xp9LpM1OzRD",
-      year: "2008-2010",
+      id: "6",
+      year: "2008–2010",
       location: "Pakistan",
       title: "Interactive Voice Response",
       category: "Game-Based Learning",
       details: [
         {
           subtitle: "Hifazat: Because life is precious",
-          description:
-            "Seamless health care solutions to the three delays for pregnant women and mothers: Geographic distance, lack of personal agency, and transportation.",
+          description: `Seamless health care solutions to the three delays for pregnant women and mothers: geographic distance, lack of personal agency, and transportation.
+          `,
         },
       ],
     },
 
+    
     {
-      id: "5",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=1xqoHJp7S_8ae5IaXHwN489AftTYYgve5",
-      year: "2008-2010",
-      location: "Pakistan",
-      title: "Interactive voice response tool",
-      category: "Social Franchising of Health Services",
-      partner: "IRC/USAID",
+      id: "7",
+      year: "2004–2009",
+      location: "Guyana",
+      title: "Interactive Comic Book",
+      category: "Game-Based Learning",
       details: [
         {
-          subtitle: "Hifazat: Because Life is Precious",
-          description: `Branded ‘uber-style’ taxis take pregnant women to care, where trained providers and certified health centers provide 24/7 seamless healthcare under this umbrella brand of protection.`,
+          subtitle: "Super Gang and the Player",
+          description: `The reader gets to choose whether Stella stays with her “sugar daddy” or leaves and reclaims her life.
+          `,
         },
       ],
     },
 
+      
     {
-      id: "5",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=1pSzvAYc5OIcBlrOjk2hI7eB5Hlf5Plo5",
-      year: "2010-2012",
-      location: "Ethiopia",
-      title: "Smart and Strong",
-      category: "Branding & Demand Generation",
-      partner: "FHI360/USAID PEPFAR",
-      details: [
-        {
-          subtitle: "",
-          description: `Alive & Thrive Campaign to engage men and leverage agricultural and WASH sectors in optimal infant and young child feeding practices.`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=1LX9hj8E9ZpVNBmhZ0g2aeMYD0a2GZz8J",
-      year: "2011-2013",
-      location: "Caribbean Region",
-      sublocation: "Guyana, Barbados, Trinidad, & Jamaica",
-      title: "Music Videos",
-      category: "Branding & Demand Generation",
-      partner: "Options/KfW",
-      details: [
-        {
-          subtitle: "Friendz",
-          description: `Mobilization of community and youth engagement to support People Living with AIDS`,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=15Aa1O5Nez7gLEnGvrcvTQG3jEbeC6YLF",
+      id: "8",
       year: "2011-2014",
-      location: "Bangladesh",
+      location: "Guyana",
       title: "Strengthening Democratic Local Governance",
       category: "Branding & Demand Generation",
-      partner: "ARD/Tetratech USAID",
       details: [
         {
           subtitle: "We are the government",
-          description: `Creating demand for good governance and citizen engagement among youth and women through mass media, social media, citizen reporting and engagement of journalists.`,
+          description: `Creating demand for good governance and citizen engagement among youth and women through mass media, social media, citizen reporting and engagement of journalists.
+
+          `,
         },
       ],
     },
 
     {
-      id: "2",
-      imageUrl:
-        "https://drive.google.com/uc?export=view&id=1YL0IvtLQmmv4JRrOXgnCZO-vfAmUb5Xu ",
-      year: "2015–2019",
-      location: "Global",
-      sublocation: "24 Priority Countries",
-      title: "Games for Intervention Design",
-      category: "Game-Based Learning",
-      details: [
-        {
-          subtitle: "Point & click fever game",
-          description:
-            "Trainers experience a Sub-Saharan African mother care-seeking journey on who or what influences her choices to treat her infant’s fever. ",
-        },
-        {
-          subtitle: "Factors Card Game",
-          description:
-            "A  “scattergories” game where planners learn the interplay of structural, social, Internal factors in individual decision-making.",
-        },
-        {
-          subtitle: "Chutes & Ladders",
-          description:
-            "Planners learn through play how different health conditions and diseases can be impacted by multi-faceted factors.",
-        },
-        {
-          subtitle: "Story Dice",
-          description:
-            "Players learn how random factors and circumstances can impact the best planned interventions.",
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl: "",
-      year: "2015–2019",
-      location: "USA",
-      sublocation: "Great Falls National Park, Potomac, Maryland",
-      title: "Digital Simulation",
-      category: "Game-Based Learning",
-      details: [
-        {
-          subtitle: "Loop Trail Quest",
-          description:
-            "Exploring choice-making in shared spaces through Intervention and research to understand conservation behaviors. ",
-        },
-      ],
-    },
-
-    {
-      id: "3",
-      imageUrl: "",
-      year: "2018-Ongoing",
-      location: "India",
-      title: "Mobile Game",
-      category: "Game-Based Learning",
-      details: [
-        {
-          subtitle: "Go Nisha Go",
-          description:
-            "An award-winning D2C Game co-created with youth that lets them discover, explore, learn and play their way toward becoming empowered choice-makers.",
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl: "",
-      year: "Coming up 2024",
-      location: "India",
-      title: "Mobile Games",
-      category: "Game-Based Learning",
-      details: [
-        {
-          description: `A D2C Game to equip adolescent boys with the vocabulary and knowledge to approach and be intimate with girls and deal with rejection <br/><br/>A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being. `,
-        },
-      ],
-    },
-
-    {
-      id: "5",
-      imageUrl: "",
-      year: "YEAR",
-      location: "Nepal",
-      title: "Zoonotic disease prevention strategies",
+      id: "9",
+      year: "2011-2013",
+      location: "Caribbean Region: Guyana, Barbados, Trinidad, & Jamaica",
+      title: "Music Videos",
       category: "Branding & Demand Generation",
-      partner: "ARD/Now Tetratech",
       details: [
         {
-          description: ` `,
+          subtitle: "Friendz",
+          description: `Mobilization of community and youth engagement through music videos to support People Living with AIDS
+
+          `,
         },
       ],
     },
+
+    {
+      id: "10",
+      year: "2010-2012",
+      location: "Caribbean Region: Guyana, Barbados, Trinidad, & Jamaica",
+      title: "Multi-Media Interventions",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: "Smart and Strong",
+          description: `Alive & Thrive Campaign to engage men and leverage agricultural and WASH sectors in optimal infant and young child feeding practices.
+
+          `,
+        },
+      ],
+    },
+
+
+    {
+      id: "11",
+      year: "2008",
+      location: "Pakistan",
+      title: "Policy Guidance",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: "",
+          description: `National policy guidance on the intersections of reproductive health, women’s and children’s health.
+          `,
+        },
+      ],
+      partner: "Save the Children"
+    },
+
+    {
+      id: "12",
+      year: "2007",
+      location: "Rwanda",
+      title: "Indoor Residual Spraying (IRS)",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: "Malaria Prevention",
+          description: `Behavior change strategies to support efficacy of IRS
+          `,
+        },
+      ],
+      partner: "Save the Children"
+    },
+
+    {
+      id: "13",
+      year: "2004-2013",
+      location: "Guyana",
+      title: "Multi-Media Interventions",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `"Don’t Dis Me"`,
+          description: `Communications from Comic Books, Music Videos, to Rock Concerts aimed at adolescents and young adults to address stigma, testing, prevention, treatment, care, and support.
+          `,
+        },
+      ],
+      partner: "FHI360/USAID PEPFAR"
+    },
+
+    {
+      id: "14",
+      year: "2003-2006",
+      location: "Ethiopia",
+      title: "HIV Compassion Campaign",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `Demand Generation for HIV Testing`,
+          description: `Partnership with Coca-Cola Foundation to produce an  award-winning Music Video montage of National Celebrities.`,
+        },
+      ],
+      partner: "FHI360"
+    },
+
+    {
+      id: "15",
+      year: "2003",
+      location: "Malawi",
+      title: "Policy Guidance",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: ``,
+          description: `National policy guidance on Maternal Newborn health`,
+        },
+      ],
+      partner: "Save the Children"
+    },
+
+
+    {
+      id: "16",
+      year: "2001-2004",
+      location: "Pakistan & Ethiopia",
+      title: "Tetanus Immunization Campaigns",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: ``,
+          description: `Mass media, feature films, and community engagement to promote immunizing women of reproductive age.`,
+        },
+      ],
+      partner: "Save the Children/UNICEF"
+    },
+
+    
+    {
+      id: "17",
+      year: "2001-2004",
+      location: "Nepal",
+      title: "Clean Delivery Product",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `National New-born Care Strategy`,
+          description: `National policy guidance and ideation and implementation support to women entrepreneurs for clean birthing kits`,
+        },
+      ],
+      partner: "Save the Children"
+    },
+
+       
+    {
+      id: "18",
+      year: "2001-2004",
+      location: "Nepal",
+      title: "Hygiene Product",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `Handwriting with soap`,
+          description: `A private sector partnership with Unilever to produce an award winning and impactful campaign that promoted the benefits of good handwashing practices and ensured supply of affordable soap.`,
+        },
+      ],
+      partner: "UNICEF/World bank/Unilever"
+    },
+
+         
+    {
+      id: "19",
+      year: "2001-2003",
+      location: "Bangladesh",
+      title: "Branding & Campaign",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `Bajee Quddus Wanna bet?`,
+          description: `HIV awareness campaign that leveraged humor and Bollywood-style character.
+          `,
+        },
+      ],
+      partner: "FHI360/USAID"
+    },
+
+         
+    {
+      id: "20",
+      year: "1995-2002",
+      location: "Vietnam, Cambodia, Nepal",
+      title: "Product Branding & Distribution",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `IDEAL (Vietnam)`,
+          description: `Oral Contraceptives and Emergency Contraceptives (ECP)
+
+          `,
+        },
+
+        {
+          subtitle: `Diamond Lady (Cambodia)`,
+          description: `Oral Contraceptives 
+          `,
+        },
+
+        {
+          subtitle: `Nava Jeevan (Nepal)`,
+          description: `New Life Orange-flavored Oral Rehydration Salts for Children 
+          `,
+        },
+
+        {
+          subtitle: `Sunaulo Gulaf Oral Contraceptive Pills (Nepal)`,
+          description: `Aligning consumer benefits such as radiant skin, energy, prosperity, and vibrancy to promote health products.
+          `,
+        },
+      ],
+      partner: "KfW (German Development Bank)"
+    },
+ 
+            
+    {
+      id: "21",
+      year: "1998-1999",
+      location: "Indonesia",
+      title: "Mass Media Campaign",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `Action Stop AIDS (ASA)  Aksi Stop AIDS`,
+          description: `Mass media communication and private sector partnerships to promote AIDS prevention.`,
+        },
+      ],
+      partner: "FHI360/USAID"
+    },
+
+    {
+      id: "22",
+      year: " 1996-1998",
+      location: "Nepal",
+      title: "Condom and Animation Campaign",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `Dhaali Dai`,
+          description: `Dual protection engagement using humor and animation.`,
+        },
+      ],
+      partner: "FHI360/USAID"
+    },
+
+
+    {
+      id: "23",
+      year: " 1996-1998",
+      location: "Nepal",
+      title: "Communication Strategy",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `Visceral Leishmaniasis (Kala-Azar)`,
+          description: `Communication strategy development to first understand disease causation and the factors that put humans at risk and to distill those insights into compelling messaging.
+          `,
+        },
+      ],
+      partner: "ARD/Now Tetratech"
+    },
+
+    
+    {
+      id: "24",
+      year: " 1995",
+      location: "Myanmar",
+      title: "Branding of Condoms",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `APHAW Branded Condoms`,
+          description: `Position the brand as a trusted friend resulting in it becoming the largest selling condom in Asia.`,
+        },
+      ],
+      partner: "PSI/UNICEF"
+    },
+
+      
+    {
+      id: "25",
+      year: " 1995",
+      location: "Myanmar",
+      title: "Fuel-Efficient Stoves",
+      category: "Branding & Demand Generation",
+      details: [
+        {
+          subtitle: `A-1 Savings`,
+          description: `Texaco-funded women’s pottery cooperative initiative to produce and sell stoves to reduce deforestation and in-door smoke.`,
+        },
+      ],
+      partner: "PSI/UNICEF"
+    },
+
+    {
+      id: "26",
+      year: "  2008-2010",
+      location: "Pakistan",
+      title: "Branded 24/7 Health Centers, Transport, and Decision Support",
+      category: "Social Franchising of Health Services",
+      details: [
+        {
+          subtitle: `Hifazat: Because Life is Precious`,
+          description: `Branded ‘uber-style’ taxis take pregnant women to care, where trained providers and certified health centers provide 24/7 seamless healthcare under this umbrella brand of protection.`,
+        },
+      ],
+      partner: "IRC/USAID"
+    },
+
+    {
+      id: "27",
+      year: "2007-2010",
+      location: "Bangladesh",
+      title: "Health Clinics",
+      category: "Social Franchising of Health Services",
+      details: [
+        {
+          subtitle: `Smiling Sun Clinic`,
+          description: `Branding refresh and outreach of health clinics to appeal to young married couples.`,
+        },
+      ],
+      partner: "Chemonics/USAID"
+    },
+
+    {
+      id: "28",
+      year: "2004-2013",
+      location: "Guyana",
+      title: "A coalition of 43 businesses",
+      category: "Social Franchising of Health Services",
+      details: [
+        {
+          subtitle: `Guyana Business Coalition`,
+          description: `Businesses unite to provide HIV testing, workplace training, transportation, insurance, and other support needs. Shared learnings and partnerships with Thai and S. Africa Business Coalitions.`,
+        },
+      ],
+      partner: "FHI360/MSH PEPFAR/USAID"
+    },
+
+    
+    {
+      id: "29",
+      year: "2004-2007",
+      location: "Bangladesh",
+      title: "Branded Drop-in Centers",
+      category: "Social Franchising of Health Services",
+      details: [
+        {
+          subtitle: `Modhumita (Sweet Friend)`,
+          description: `Drop in center for gay men, sex workers and injection drug users.`,
+        },
+      ]
+    },
+
+    
+    {
+      id: "30",
+      year: "2004-2007",
+      location: "Bangladesh",
+      title: "Branded Drop-in Centers",
+      category: "Social Franchising of Health Services",
+      details: [
+        {
+          subtitle: `Modhumita (Sweet Friend)`,
+          description: `160 customized lounges and meeting places that attracted marginalized populations for testing and treatment for STIs including HIV.
+          `,
+        },
+      ],
+      partner: "FHI360/MSH PEPFAR/USAID"
+    },
+
+       
+    {
+      id: "31",
+      year: "2003-2004",
+      location: "Vietnam",
+      title: "HIV testing and counseling spaces",
+      category: "Social Franchising of Health Services",
+      details: [
+        {
+          subtitle: `Café corners`,
+          description: `HIV testing and counseling corners in coffee shops.`,
+        },
+      ],
+      partner: "Marie Stopes International"
+    },
+
+    {
+      id: "31",
+      year: "1995",
+      location: "Nepal",
+      title: "Injectable contraceptive distribution, training and certification",
+      category: "Social Franchising of Health Services",
+      details: [
+        {
+          subtitle: ``,
+          description: `A global first over-the-counter contraceptive distributed through a network of branded pharmacies with quality assured through mystery shopper checks.`,
+        },
+      ],
+    },
+
   ];
 
   const categorySettings = {
@@ -529,7 +572,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderTimeline(category = "Full Timeline") {
     timelineContainer.innerHTML = ""; // Clear existing content
 
-    timelineData.reverse().forEach((item) => {
+    timelineData.forEach((item) => {
       if (category !== "Full Timeline" && item.category !== category) return;
 
       const sublocationContent = item.sublocation
@@ -568,7 +611,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="dot"></div>         
           </div>     
               <div class="timeline__content">
-                    <img class="timeline__img" src="${item.imageUrl}" loading="lazy" />
+                    <img class="timeline__img" src="./assets/${item.id}.jpg" loading="lazy" />
                     <div class="timeline__text" style="background-color: ${backgroundColor};">
                       <div class="title_content">
                             <span class="category">${item.category}</span>
@@ -597,7 +640,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Setup Intersection Observer
   function oldSetupIntersectionObserver() {
     const observerOptions = {
-      threshold: 0.6,
+      threshold: 0.5,
       rootMargin: "0px",
     };
 
@@ -619,7 +662,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Setup Intersection Observer
-  function setupIntersectionObserver() {
+  function olderSetupIntersectionObserver() {
     const observerOptions = {
       threshold: [0, 0.25, 0.5, 0.75, 1],
       // Removed rootMargin from here
@@ -644,6 +687,30 @@ document.addEventListener("DOMContentLoaded", () => {
             });
           entry.target.classList.add("timeline-item--active");
 
+          const imageUrl = entry.target.querySelector(".timeline__img").src;
+          wholePage.style.backgroundImage = `url(${imageUrl})`;
+        } else {
+          entry.target.classList.remove("timeline-item--active");
+        }
+      });
+    }, observerOptions);
+
+    document
+      .querySelectorAll(".timeline-item")
+      .forEach((item) => observer.observe(item));
+  }
+
+  // Setup Intersection Observer
+  function setupIntersectionObserver() {
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: "0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("timeline-item--active");
           const imageUrl = entry.target.querySelector(".timeline__img").src;
           wholePage.style.backgroundImage = `url(${imageUrl})`;
         } else {
