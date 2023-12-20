@@ -10,6 +10,10 @@
   line-height: 1.6;
 }
 
+html, body{
+  background-color: #333333;
+}
+
 h4{
   margin: 0px;
 }
@@ -442,11 +446,11 @@ div.divider{
 }
 
 .nav-item[data-category="Game-Based Learning"]::before {
-  background-color: #7d1e57;
+  background-color: #d7401a;
 }
 
 .nav-item[data-category="Branding & Demand Generation"]::before {
-  background-color: #d7401a;
+  background-color: #e8a425;
 }
 
 .nav-item[data-category="Social Franchising of Health Services"]::before {
