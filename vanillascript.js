@@ -98,38 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     {
-      id: "6",
-      year: "2008–2010",
-      location: "Pakistan",
-      title: "Interactive Voice Response",
-      category: "Game-Based Learning",
-      details: [
-        {
-          subtitle: "Hifazat: Because life is precious",
-          description: `Seamless health care solutions to the three delays for pregnant women and mothers: geographic distance, lack of personal agency, and transportation.
-          `,
-        },
-      ],
-    },
-
-    
-    {
-      id: "7",
-      year: "2004–2009",
-      location: "Guyana",
-      title: "Interactive Comic Book",
-      category: "Game-Based Learning",
-      details: [
-        {
-          subtitle: "Super Gang and the Player",
-          description: `The reader gets to choose whether Stella stays with her “sugar daddy” or leaves and reclaims her life.
-          `,
-        },
-      ],
-    },
-
-      
-    {
       id: "8",
       year: "2011-2014",
       location: "Guyana",
@@ -177,7 +145,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
     },
 
-
     {
       id: "11",
       year: "2008",
@@ -191,7 +158,22 @@ document.addEventListener("DOMContentLoaded", () => {
           `,
         },
       ],
-      partner: "Save the Children"
+      partner: "Save the Children",
+    },
+
+    {
+      id: "6",
+      year: "2008–2010",
+      location: "Pakistan",
+      title: "Interactive Voice Response",
+      category: "Game-Based Learning",
+      details: [
+        {
+          subtitle: "Hifazat: Because life is precious",
+          description: `Seamless health care solutions to the three delays for pregnant women and mothers: geographic distance, lack of personal agency, and transportation.
+          `,
+        },
+      ],
     },
 
     {
@@ -207,7 +189,22 @@ document.addEventListener("DOMContentLoaded", () => {
           `,
         },
       ],
-      partner: "Save the Children"
+      partner: "Save the Children",
+    },
+
+    {
+      id: "7",
+      year: "2004–2009",
+      location: "Guyana",
+      title: "Interactive Comic Book",
+      category: "Game-Based Learning",
+      details: [
+        {
+          subtitle: "Super Gang and the Player",
+          description: `The reader gets to choose whether Stella stays with her “sugar daddy” or leaves and reclaims her life.
+          `,
+        },
+      ],
     },
 
     {
@@ -223,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
           `,
         },
       ],
-      partner: "FHI360/USAID PEPFAR"
+      partner: "FHI360/USAID PEPFAR",
     },
 
     {
@@ -238,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `Partnership with Coca-Cola Foundation to produce an  award-winning Music Video montage of National Celebrities.`,
         },
       ],
-      partner: "FHI360"
+      partner: "FHI360",
     },
 
     {
@@ -253,9 +250,8 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `National policy guidance on Maternal Newborn health`,
         },
       ],
-      partner: "Save the Children"
+      partner: "Save the Children",
     },
-
 
     {
       id: "16",
@@ -269,10 +265,9 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `Mass media, feature films, and community engagement to promote immunizing women of reproductive age.`,
         },
       ],
-      partner: "Save the Children/UNICEF"
+      partner: "Save the Children/UNICEF",
     },
 
-    
     {
       id: "17",
       year: "2001-2004",
@@ -285,10 +280,9 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `National policy guidance and ideation and implementation support to women entrepreneurs for clean birthing kits`,
         },
       ],
-      partner: "Save the Children"
+      partner: "Save the Children",
     },
 
-       
     {
       id: "18",
       year: "2001-2004",
@@ -301,10 +295,9 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `A private sector partnership with Unilever to produce an award winning and impactful campaign that promoted the benefits of good handwashing practices and ensured supply of affordable soap.`,
         },
       ],
-      partner: "UNICEF/World bank/Unilever"
+      partner: "UNICEF/World bank/Unilever",
     },
 
-         
     {
       id: "19",
       year: "2001-2003",
@@ -318,10 +311,9 @@ document.addEventListener("DOMContentLoaded", () => {
           `,
         },
       ],
-      partner: "FHI360/USAID"
+      partner: "FHI360/USAID",
     },
 
-         
     {
       id: "20",
       year: "1995-2002",
@@ -354,10 +346,9 @@ document.addEventListener("DOMContentLoaded", () => {
           `,
         },
       ],
-      partner: "KfW (German Development Bank)"
+      partner: "KfW (German Development Bank)",
     },
- 
-            
+
     {
       id: "21",
       year: "1998-1999",
@@ -370,7 +361,7 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `Mass media communication and private sector partnerships to promote AIDS prevention.`,
         },
       ],
-      partner: "FHI360/USAID"
+      partner: "FHI360/USAID",
     },
 
     {
@@ -385,9 +376,8 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `Dual protection engagement using humor and animation.`,
         },
       ],
-      partner: "FHI360/USAID"
+      partner: "FHI360/USAID",
     },
-
 
     {
       id: "23",
@@ -402,10 +392,9 @@ document.addEventListener("DOMContentLoaded", () => {
           `,
         },
       ],
-      partner: "ARD/Now Tetratech"
+      partner: "ARD/Now Tetratech",
     },
 
-    
     {
       id: "24",
       year: " 1995",
@@ -418,10 +407,9 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `Position the brand as a trusted friend resulting in it becoming the largest selling condom in Asia.`,
         },
       ],
-      partner: "PSI/UNICEF"
+      partner: "PSI/UNICEF",
     },
 
-      
     {
       id: "25",
       year: " 1995",
@@ -434,12 +422,12 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `Texaco-funded women’s pottery cooperative initiative to produce and sell stoves to reduce deforestation and in-door smoke.`,
         },
       ],
-      partner: "PSI/UNICEF"
+      partner: "PSI/UNICEF",
     },
 
     {
       id: "26",
-      year: "  2008-2010",
+      year: "2008-2010",
       location: "Pakistan",
       title: "Branded 24/7 Health Centers, Transport, and Decision Support",
       category: "Social Franchising of Health Services",
@@ -449,7 +437,7 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `Branded ‘uber-style’ taxis take pregnant women to care, where trained providers and certified health centers provide 24/7 seamless healthcare under this umbrella brand of protection.`,
         },
       ],
-      partner: "IRC/USAID"
+      partner: "IRC/USAID",
     },
 
     {
@@ -464,7 +452,7 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `Branding refresh and outreach of health clinics to appeal to young married couples.`,
         },
       ],
-      partner: "Chemonics/USAID"
+      partner: "Chemonics/USAID",
     },
 
     {
@@ -479,10 +467,9 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `Businesses unite to provide HIV testing, workplace training, transportation, insurance, and other support needs. Shared learnings and partnerships with Thai and S. Africa Business Coalitions.`,
         },
       ],
-      partner: "FHI360/MSH PEPFAR/USAID"
+      partner: "FHI360/MSH PEPFAR/USAID",
     },
 
-    
     {
       id: "29",
       year: "2004-2007",
@@ -494,10 +481,9 @@ document.addEventListener("DOMContentLoaded", () => {
           subtitle: `Modhumita (Sweet Friend)`,
           description: `Drop in center for gay men, sex workers and injection drug users.`,
         },
-      ]
+      ],
     },
 
-    
     {
       id: "30",
       year: "2004-2007",
@@ -511,10 +497,9 @@ document.addEventListener("DOMContentLoaded", () => {
           `,
         },
       ],
-      partner: "FHI360/MSH PEPFAR/USAID"
+      partner: "FHI360/MSH PEPFAR/USAID",
     },
 
-       
     {
       id: "31",
       year: "2003-2004",
@@ -527,14 +512,15 @@ document.addEventListener("DOMContentLoaded", () => {
           description: `HIV testing and counseling corners in coffee shops.`,
         },
       ],
-      partner: "Marie Stopes International"
+      partner: "Marie Stopes International",
     },
 
     {
       id: "31",
       year: "1995",
       location: "Nepal",
-      title: "Injectable contraceptive distribution, training and certification",
+      title:
+        "Injectable contraceptive distribution, training and certification",
       category: "Social Franchising of Health Services",
       details: [
         {
@@ -543,7 +529,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ],
     },
-
   ];
 
   const categorySettings = {
@@ -633,6 +618,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize the timeline
   function initTimeline(category = "Full Timeline") {
+    // Sort timelineData in descending order by year
+    timelineData.sort((a, b) => {
+      // Extract the first 4 characters of the year and convert to number
+      const yearA = parseInt(a.year.substring(0, 4));
+      const yearB = parseInt(b.year.substring(0, 4));
+
+      // Compare the years
+      return yearB - yearA;
+    });
+
     renderTimeline(category);
     setupIntersectionObserver();
   }
