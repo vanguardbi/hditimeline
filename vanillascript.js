@@ -635,7 +635,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Setup Intersection Observer
   function oldSetupIntersectionObserver() {
     const observerOptions = {
-      threshold: 0.5,
+      threshold: 0.55,
       rootMargin: "0px",
     };
 

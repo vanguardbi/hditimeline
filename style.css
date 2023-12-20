@@ -46,6 +46,17 @@ div#timeline-1 {
  
 }
 
+.headings{
+  display: flex;
+  margin: 0 auto;
+  padding-left: 300px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1000px;
+  position: relative;
+  width: 100%;
+}
+
 .timeline {
   display: flex;
   margin: 0 auto;
@@ -66,7 +77,7 @@ div#timeline-1 {
 
 button {
   border: none;
-  color: #302020;
+  color: #f8f8f8;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -105,9 +116,13 @@ button {
   font-size: 0.8rem;
 }
 
+
+
+/*The vertical line*/
 .timeline:before {
   position: absolute;
   left: 30%;
+  top: 100px;
   width: 2px;
   height: 100%;
   margin-left: -1px;
@@ -137,6 +152,7 @@ button {
   color: white;
   align-self: center;
   margin-left: 310px;
+  margin-top: 300px;
 
 }
 
@@ -347,11 +363,15 @@ div.divider{
   position: relative;
 }
 
+
+
 .timeline-header__title {
   font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin: 0;
+  /* text-align: center; */
+  
 }
 
 .timeline-header__subtitle {
