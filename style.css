@@ -264,7 +264,7 @@ p.desc {
 }
 
 .title, .subtitle{
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .timeline-item--active .year div {
