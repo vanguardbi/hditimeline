@@ -7,7 +7,7 @@
   color: #eee;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1;
 }
 
 .loader {
@@ -138,7 +138,6 @@ p.desc {
   padding: 3em 0em ;
   margin-top: -10px;
   width: 600px;
-  max-width: 90%;
   max-width: 100%;
   font-size: 0.8rem;
 }
@@ -341,7 +340,7 @@ div.divider{
     background-color: #7d1e57;
     padding: 3em 0em ;
     margin-top: -10px;
-    max-width: 80%;
+    max-width: 90%;
     font-size: 0.7em;
   
   }
@@ -433,7 +432,7 @@ div.divider{
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   letter-spacing: 3px;
-  margin: -5px 0 0 0;
+  margin: 10px 0 0 0;
   /* font-weight: normal; */
 }
 
@@ -597,6 +596,7 @@ span.title{
 
 .location, .category{
   font-size: 1.2em;
+  line-height: 1;
 }
 
 .location span {
