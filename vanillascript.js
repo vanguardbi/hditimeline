@@ -625,6 +625,8 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
       timelineContainer.insertAdjacentHTML("beforeend", content);
     });
+
+    document.getElementById('loader').style.display = 'none';
   }
 
   // Initialize the timeline
