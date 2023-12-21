@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-
+  function preloadUpcomingImages(currentIndex, preloadCount = 3) {
+    const upcomingItems = timelineData.slice(
+      currentIndex,
+      currentIndex + preloadCount
+    );
+    upcomingItems.forEach((item) => {
+      const img = new Image();
+      img.src = `./assets/${item.id}.jpg`; // Adjust the path as necessary
+    });
+  }
 
   // Cache commonly used elements
   const timelineContainer = document
@@ -559,18 +568,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderTimeline(category = "Full Timeline") {
     timelineContainer.innerHTML = ""; // Clear existing content
 
-    
-   // Preload Images Function
-   function preloadImages() {
-    timelineData.forEach(item => {
-      const img = new Image();
-      img.src = `./assets/${item.id}.jpg`; // Adjust the path as necessary
-    });
-  }
-
-  // Call the preloadImages function to start preloading
-  preloadImages();
-
     timelineData.forEach((item) => {
       if (category !== "Full Timeline" && item.category !== category) return;
 
@@ -722,6 +719,9 @@ document.addEventListener("DOMContentLoaded", () => {
           entry.target.classList.add("timeline-item--active");
           const imageUrl = entry.target.querySelector(".timeline__img").src;
           wholePage.style.backgroundImage = `url(${imageUrl})`;
+
+          // Preload images for upcoming items
+          preloadUpcomingImages(index, 3); // Adjust the number of items to preload as needed
         } else {
           entry.target.classList.remove("timeline-item--active");
         }
