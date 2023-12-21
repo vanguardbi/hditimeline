@@ -720,8 +720,11 @@ document.addEventListener("DOMContentLoaded", () => {
           const imageUrl = entry.target.querySelector(".timeline__img").src;
           wholePage.style.backgroundImage = `url(${imageUrl})`;
 
+          // Get the index of the current entry
+          const currentIndex = Array.from(document.querySelectorAll('.timeline-item')).indexOf(entry.target);
+
           // Preload images for upcoming items
-          preloadUpcomingImages(index, 3); // Adjust the number of items to preload as needed
+          preloadUpcomingImages(currentIndex, 3); // Adjust the number of items to preload as needed
         } else {
           entry.target.classList.remove("timeline-item--active");
         }

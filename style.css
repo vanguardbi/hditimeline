@@ -14,12 +14,16 @@ html, body{
   background-color: #333333;
 }
 
+.nav-item.home a{
+  text-decoration: underline;
+}
+
 h4{
   margin: 0px;
 }
 
 div#timeline-1 {
-  transition: all 0.3s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .category {
@@ -88,13 +92,14 @@ button {
   margin-top: 20px;
 }
 
-.desc {
+p.desc {
   margin: 0;
   font-size: 15px;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   /* font-weight: normal; */
   line-height: 25px;
+  padding-bottom: 0px;
 }
 
 .timeline__content-desc {
@@ -203,7 +208,8 @@ button {
 }
 
 .timeline-item--active .year h3 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
+  margin: 12px 0px;
 }
 
 .year div{
@@ -270,6 +276,11 @@ div.divider{
     
   }
 
+  .timeline-item--active .year h3 {
+    font-size: 2rem;
+    margin: 12px 0px;
+  }
+
   .timeline:before {
     left: 40px;
     top: 0px;
@@ -327,12 +338,8 @@ div.divider{
     line-height: normal;
     max-width: 75vw;
     font-size: 1.5rem;
+    margin: 0px
   }
-
-  .timeline-item--active .year h3 {
-    font-size: 1.8rem;
-  }
-
 
   .year div{
     width: 20px;
@@ -406,12 +413,12 @@ div.divider{
 .demo-footer {
   padding: 60px 0;
   text-align: center;
-  color: #333333;
-  background-color: #ddd
+  color: #ddd;
+  background-color: #121212
 }
 
 .demo-footer a {
-  color: #333;
+  color: #ddd;
   display: inline-block;
 }
 
@@ -532,7 +539,7 @@ div.divider{
 
 
 .title{
-  font-size: 2.5em;
+  font-size: 2.8rem;
   text-transform: uppercase;
   font-weight: bold;
   margin: 40px 0px;
@@ -544,7 +551,9 @@ div.divider{
   padding: 0px;
   /* padding-bottom: 20px; */
   font-weight: bold;
-  font-size: 2em;
+  font-size: 3.5em;
+  margin-top: -45px;
+  line-height: normal;
 }
 
 span.title{
@@ -556,6 +565,11 @@ span.title{
   margin-bottom: 0px;
   margin-top: 5px;
   font-weight: bold;
+  
+}
+
+.location, .category{
+  font-size: 1.2em;
 }
 
 .location span {
@@ -564,6 +578,8 @@ span.title{
 
 .desc{
   padding-bottom: 40px;
+  font-size: 1.1rem;
+  padding-top: 30px;
 }
 
 
@@ -594,7 +610,8 @@ span.title{
     height: 100vh;
     top: 0;
     right: 0;
-    background-color: rgba(245, 245, 245, 1); /* Semi-transparent background */
+    background-color: rgb(43, 35, 35); 
+    color: #f8f8f8;
     flex-direction: column; /* Stack items vertically */
     justify-content: space-around; /* Evenly distribute space around items */
     align-items: center; /* Center items horizontally */
@@ -610,6 +627,22 @@ span.title{
     display: flex; /* Ensure it's always a flex container */
   }
 
+  .category, .location {
+    font-size: 1.1rem;
+  }
+
+  .title{
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
   #floating-nav.active {
     transform: translateX(0); /* Slide in */
   }
@@ -622,16 +655,19 @@ span.title{
     max-height: 100vh;
     max-width: 100vw;
     padding: 200px 0px;
+    top: 0px;
+    left: 40px;
   }
 
   #floating-nav .items-container a {
     text-align: start;
-    color: #333;
+    color: #f8f8f8;
   }
 
   .nav-item {
     width: 100%; /* Full width for better layout */
     /* text-align: center; Center-align the text */
+    max-width: 100%;
   }
 
   nav-item::before {
@@ -640,7 +676,10 @@ span.title{
 
   .nav-item a {
     display: block; /* Makes the link fill the entire width of nav-item */
+    max-width: 70%;
   }
+
+
 
   .hamburger-icon {
     display: flex !important; /* Show the hamburger icon as a flex container on mobile */
@@ -654,6 +693,7 @@ span.title{
   .timeline-item {
     margin: 0px;
     flex-direction: column;
+    font-size: 1.5rem;
   }
 
   .timeline-header {
