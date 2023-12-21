@@ -53,7 +53,8 @@ div#timeline-1 {
 }
 
 .partnerContainer {
-  margin-top: -30px;
+  margin-top: -68px;
+  font-size: 1.1rem;
 }
 
 .partner {
@@ -116,12 +117,12 @@ button {
 
 p.desc {
   margin: 0;
-  font-size: 15px;
+  font-size: 1.1rem;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   /* font-weight: normal; */
   line-height: 25px;
-  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .timeline__content-desc {
