@@ -53,7 +53,7 @@ div#timeline-1 {
 }
 
 .partnerContainer {
-  margin-top: -68px;
+  margin-top: -76px;
   font-size: 1.1rem;
 }
 
@@ -62,8 +62,6 @@ div#timeline-1 {
   border: 0px solid #000; /* black border */
   border-radius: 50px; /* rounded corners */;
   font-style: italic;
-  margin-top: -30px;
-
 }
 
 .sublocation{
@@ -230,6 +228,7 @@ p.desc {
   font-weight: bold;
   text-align: right;
   transition: all 0.5s ease-in-out;
+  font-size: 3.5rem;
 }
 
 .timeline-item--active .year h3 {
