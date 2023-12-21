@@ -546,22 +546,22 @@ document.addEventListener("DOMContentLoaded", () => {
     "Full Timeline": {
       color: "#f8f8f8",
       backgroundImage:
-        "https://images.unsplash.com/photo-1571053748382-141b7de59b88?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "",
     },
     "Game-Based Learning": {
       color: "#d7401a",
       backgroundImage:
-        "https://images.unsplash.com/photo-1682685797828-d3b2561deef4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "",
     },
     "Branding & Demand Generation": {
       color: "#e8a425",
       backgroundImage:
-        "https://images.unsplash.com/photo-1682686581427-7c80ab60e3f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "",
     },
     "Social Franchising of Health Services": {
       color: "#3d7a31",
       backgroundImage:
-        "https://images.unsplash.com/photo-1695653420508-f2481c1d783c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "",
     },
   };
 
@@ -626,7 +626,7 @@ document.addEventListener("DOMContentLoaded", () => {
       timelineContainer.insertAdjacentHTML("beforeend", content);
     });
 
-    document.getElementById('loader').style.display = 'none';
+    // document.getElementById('loader').style.display = 'none';
   }
 
   // Initialize the timeline
