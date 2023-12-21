@@ -122,7 +122,7 @@ button {
 .timeline:before {
   position: absolute;
   left: 30%;
-  top: 100px;
+  top: 25px;
   width: 2px;
   height: 100%;
   margin-left: -1px;
@@ -399,7 +399,7 @@ div.divider{
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   letter-spacing: 3px;
-  margin: 5px 0 0 0;
+  margin: -5px 0 0 0;
   /* font-weight: normal; */
 }
 
@@ -542,7 +542,7 @@ div.divider{
 .subtitle{
   margin: 0px;
   padding: 0px;
-  padding-top: 20px;
+  /* padding-bottom: 20px; */
   font-weight: bold;
   font-size: 2em;
 }
@@ -563,7 +563,7 @@ span.title{
 }
 
 .desc{
-  /* margin: 40px 0px; */
+  padding-bottom: 40px;
 }
 
 

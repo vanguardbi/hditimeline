@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       id: "3",
-      year: "2018–Ongoing",
+      year: "2018-Ongoing",
       location: "India",
       title: "Mobile Game",
       category: "Game-Based Learning",
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       id: "4",
-      year: "2015–2019",
+      year: "2015-2019",
       location: " USA, Great Falls National Park, Potomac, Maryland",
       title: "Digital Simulation",
       category: "Game-Based Learning",
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       id: "5",
-      year: "2015–2019",
+      year: "2015-2019",
       location: "GLOBAL - 24 Priority Countries",
       title: "Games for Intervention Design",
       category: "Game-Based Learning",
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       id: "6",
-      year: "2008–2010",
+      year: "2008-2010",
       location: "Pakistan",
       title: "Interactive Voice Response",
       category: "Game-Based Learning",
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       id: "7",
-      year: "2004–2009",
+      year: "2004-2009",
       location: "Guyana",
       title: "Interactive Comic Book",
       category: "Game-Based Learning",
