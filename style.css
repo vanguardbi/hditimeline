@@ -40,6 +40,10 @@ html, body{
   text-decoration: underline;
 }
 
+.nav-item.home{
+  padding-top: 1rem;
+}
+
 h4{
   margin: 0px;
 }
@@ -53,7 +57,7 @@ div#timeline-1 {
 }
 
 .partnerContainer {
-  margin-top: -76px;
+  margin-top: -40px;
   font-size: 1.1rem;
 }
 
@@ -182,6 +186,19 @@ p.desc {
 
 }
 
+.timeline-item.long p.subtitle{
+  padding-top: 40px;
+}
+
+.timeline-item.long p.desc{
+  padding: 0px;
+  
+}
+
+.timeline-item.long button{
+  margin-top: 80px;
+}
+
 
 
 
@@ -229,12 +246,12 @@ p.desc {
   text-align: right;
   transition: all 0.5s ease-in-out;
   font-size: 3.5rem;
-  margin: 28px 0px;
+  margin: 33px 0px;
 }
 
 .timeline-item--active .year h3 {
-  font-size: 4.5rem;
-  margin: 15px 0px;
+  font-size: 3.6rem;
+ 
 }
 
 .year div{
@@ -244,6 +261,10 @@ p.desc {
   border-radius: 100%;
   position: absolute;
   left: calc(105%);
+}
+
+.title, .subtitle{
+  line-height: 1;
 }
 
 .timeline-item--active .year div {
@@ -298,7 +319,10 @@ div.divider{
     width: 100%;
     padding: 0 30px 150px 80px;
     flex-direction: column;
-    
+  }
+
+  .title, .subtitle{
+    line-height: 1.1;
   }
 
   .timeline-item--active .year h3 {
@@ -451,10 +475,10 @@ div.divider{
 /* Common Styles for All Screens */
 #floating-nav .items-container {
   position: fixed;
-  top:70px;
-  left: 70px; /* Align to the top right corner */
+  top:40px;
+  left: 40px; /* Align to the top right corner */
   border-radius: 10px;
-  z-index: 1000;
+  z-index: 0;
   display: flex;
   flex-direction: column; /* Align items vertically */
   align-items: flex-start; /* Align items to the start (left) */
@@ -569,7 +593,7 @@ div.divider{
   text-transform: uppercase;
   font-weight: bold;
   margin: 40px 0px;
-  line-height: normal;
+
 }
 
 .subtitle{
@@ -579,7 +603,7 @@ div.divider{
   font-weight: bold;
   font-size: 3.5em;
   margin-top: -45px;
-  line-height: normal;
+
 }
 
 span.title{

@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       id: "3",
-      year: "2018-Ongoing",
+      year: "2018",
       location: "India",
       title: "Mobile Game",
       category: "Game-Based Learning",
@@ -527,7 +527,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     {
-      id: "31",
+      id: "32",
       year: "1995",
       location: "Nepal",
       title:
@@ -599,9 +599,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const partnerContent = item.partner
         ? `<span class="partner">${item.partner}</span>`
         : "";
-      const content = `
+      let content = `
  
-          <div class="timeline-item" data-text="${item.year}">     
+          <div class="timeline-item ${item.id === "5" ? "long" : ""}" data-text="${item.year}">     
           <div class="year">
               <h3>${item.year}</h3> 
               <div class="dot"></div>         
@@ -623,6 +623,8 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
  
         `;
+
+       
       timelineContainer.insertAdjacentHTML("beforeend", content);
     });
 
