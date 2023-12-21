@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+
   // Cache commonly used elements
   const timelineContainer = document
     .getElementById("timeline-1")
@@ -556,6 +558,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderTimeline(category = "Full Timeline") {
     timelineContainer.innerHTML = ""; // Clear existing content
+
+    
+   // Preload Images Function
+   function preloadImages() {
+    timelineData.forEach(item => {
+      const img = new Image();
+      img.src = `./assets/${item.id}.jpg`; // Adjust the path as necessary
+    });
+  }
+
+  // Call the preloadImages function to start preloading
+  preloadImages();
 
     timelineData.forEach((item) => {
       if (category !== "Full Timeline" && item.category !== category) return;
