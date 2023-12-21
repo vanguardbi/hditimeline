@@ -107,7 +107,7 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.1rem;
   border-radius: 6px;
   cursor: pointer;
   margin-top: 20px;
@@ -121,6 +121,7 @@ p.desc {
   /* font-weight: normal; */
   line-height: 25px;
   margin-bottom: 0px;
+ 
 }
 
 .timeline__content-desc {
