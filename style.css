@@ -57,7 +57,7 @@ div#timeline-1 {
 }
 
 .partnerContainer {
-  margin-top: -40px;
+  margin-top: -20px;
   font-size: 1.1rem;
 }
 
@@ -124,7 +124,7 @@ p.desc {
   font-family: "Montserrat", sans-serif;
   /* font-weight: normal; */
   line-height: 25px;
-  margin-bottom: 0px;
+  margin-bottom: -30px;
  
 }
 
