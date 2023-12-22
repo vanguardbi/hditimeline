@@ -323,7 +323,7 @@ div.divider{
   }
 
   .title, .subtitle{
-    line-height: 1.1;
+    line-height: 1.4;
   }
 
   .timeline-item--active .year h3 {
@@ -621,7 +621,7 @@ span.title{
 
 .location, .category{
   font-size: 1.2em;
-  line-height: 1;
+  /* line-height: 1; */
 }
 
 .location span {
@@ -681,6 +681,7 @@ span.title{
 
   .category, .location {
     font-size: 1.1rem;
+    line-height: 1.4rem;
   }
 
   .title{
