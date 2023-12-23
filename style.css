@@ -119,7 +119,7 @@ button {
 
 p.desc {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   /* font-weight: normal; */
@@ -197,8 +197,13 @@ p.desc {
 }
 
 .timeline-item.long button{
-  margin-top: 80px;
+  margin-top: 28px;
 }
+
+.timeline-item.long .partnerContainer{
+  display: none;
+}
+
 
 
 

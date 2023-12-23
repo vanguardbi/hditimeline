@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     upcomingItems.forEach((item) => {
       const img = new Image();
-      img.src = `./assets/${item.id}.jpg`; // Adjust the path as necessary
+      img.src = `./assets/${item.id}.webp`; // Adjust the path as necessary
     });
   }
 
@@ -102,8 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           subtitle: "Story Dice",
-          description: `Players learn how random factors and circumstances can impact the best planned interventions. 
-          `,
+          description: `Players learn how random factors and circumstances can impact the best planned interventions.`,
         },
       ],
     },
@@ -607,7 +606,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="dot"></div>         
           </div>     
               <div class="timeline__content">
-                    <img class="timeline__img" src="./assets/${item.id}.jpg" loading="lazy" />
+                    <img class="timeline__img" src="./assets/${item.id}.webp" loading="lazy" />
                     <div class="timeline__text" style="background-color: ${backgroundColor};">
                       <div class="title_content">
                             <span class="category">${item.category}</span>
