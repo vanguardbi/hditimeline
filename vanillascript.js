@@ -606,7 +606,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="dot"></div>         
           </div>     
               <div class="timeline__content">
-                    <img class="timeline__img" src="./assets/${item.id}.webp" loading="lazy" />
+                    <img class="timeline__img" src="./assets/${item.id}.webp"/>
                     <div class="timeline__text" style="background-color: ${backgroundColor};">
                       <div class="title_content">
                             <span class="category">${item.category}</span>
