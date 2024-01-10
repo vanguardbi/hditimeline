@@ -34,14 +34,16 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       year: "2024",
       location: "India",
       title: "MOBILE GAME",
-      category: "Game-Based Learning",
+      category: "Interactive Learning",
       details: [
         {
           subtitle: "Coming Up: A Game for Boys",
-          description: `A D2C Game to equip adolescent boys with the vocabulary and knowledge to approach and be intimate with girls and deal with rejection. 
+          description: `A D2C game to equip adolescent boys with the vocabulary and knowledge to approach and be 
+          intimate with girls and deal with rejection.  
           `,
         },
       ],
+      partner: 'USAID/Washington'
     },
 
     {
@@ -49,23 +51,23 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       year: "2024",
       location: "Nepal",
       title: "Mobile Game",
-      category: "Game-Based Learning",
+      category: "Interactive Learning",
       partner: "PSI/UNICEF",
       details: [
         {
           subtitle: "Coming Up: A game for Girls",
-          description: `A D2C Game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being. 
-          `,
+          description: `A D2C game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being.     `,
         },
       ],
+      partner: 'USAID/Nepal and CARE Nepal'
     },
 
     {
       id: "3",
-      year: "2018",
+      year: "2018 - Ongoing",
       location: "India",
       title: "Mobile Game",
-      category: "Game-Based Learning",
+      category: "Interactive Learning",
       partner: "PSI/UNDP/FAO",
       details: [
         {
@@ -73,6 +75,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           description: `An award-winning D2C Game co-created with youth that lets them discover, explore, learn and play their way toward becoming empowered choice-makers.`,
         },
       ],
+      partner: 'USAID/Washington'
     },
 
     {
@@ -80,7 +83,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       year: "2015-2019",
       location: " USA, Great Falls National Park, Potomac, Maryland",
       title: "Digital Simulation",
-      category: "Game-Based Learning",
+      category: "Interactive Learning",
       details: [
         {
           subtitle: "Loop Trail Quest",
@@ -88,30 +91,32 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
+      partner: 'Self-funded by HDI'
     },
 
     {
       id: "5",
       year: "2015-2019",
       location: "GLOBAL - 24 Priority Countries",
-      title: "Games for Intervention Design",
-      category: "Game-Based Learning",
+      title: "Games for Program Planning and Design",
+      category: "Interactive Learning",
       details: [
         {
-          subtitle: "Point & click fever game",
-          description: `Trainers experience a Sub-Saharan African mother’s care-seeking journey and  who or what influences her choices to treat her infant’s fever.`,
+          subtitle: "Point & Click Fever Game",
+          description: `Program planners  experience a Sub-Saharan African mother’s care-seeking journey and  who or what influences her choices to treat her infant’s fever. 
+          `,
         },
         {
           subtitle: `Factors Card Game`,
           description: `A  “scattergories” game where program planners learn the interplay of structural, social,and  internal factors in individual decision-making.`,
         },
         {
-          subtitle: "Chutes & Ladders",
+          subtitle: "Chutes & Ladders Board Game",
           description: `Planners learn through play how different health conditions and diseases can be impacted by multi-faceted factors.
           `,
         },
         {
-          subtitle: "Story Dice",
+          subtitle: "Story Dice Game",
           description: `Players learn how random factors and circumstances can impact the best planned interventions.`,
         },
       ],
@@ -126,11 +131,10 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       details: [
         {
           subtitle: "We are the government",
-          description: `Creating demand for good governance and citizen engagement among youth and women through mass media, social media, citizen reporting and engagement of journalists.
-
-          `,
+          description: `Creating demand for good governance and citizen engagement among youth and women through mass media, social media, citizen reporting and engagement of journalists. `,
         },
       ],
+      partner: "Tetratech/USAID"
     },
 
     {
@@ -147,6 +151,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
+      partner: "Options/Kreditanstalt fur Wiederaufbau (KfW) German Development Bank"
     },
 
     {
@@ -163,6 +168,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
+      partner: "FHI Solutions/The Bill & Melinda Gates Foundation"
     },
 
     {
@@ -170,7 +176,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       year: "2008",
       location: "Pakistan",
       title: "Policy Guidance",
-      category: "Branding & Demand Generation",
+      category: "Policy Guidance & Advisory",
       details: [
         {
           subtitle: "",
@@ -186,14 +192,14 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       year: "2008-2010",
       location: "Pakistan",
       title: "Interactive Voice Response",
-      category: "Game-Based Learning",
+      category: "Interactive Learning",
       details: [
         {
           subtitle: "Hifazat: Because life is precious",
-          description: `Seamless health care solutions to the three delays for pregnant women and mothers: geographic distance, lack of personal agency, and transportation.
-          `,
+          description: `Agency for pregnant women and mothers to make decisions and seek care supported through an IVR service with advice from a female doctor. First ever public/private partnership with a telecom company.  `,
         },
       ],
+      partner: "International Rescue Committee (IRC)/USAID"
     },
 
     {
@@ -209,7 +215,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
-      partner: "Save the Children",
+      partner: "RTI International/USAID",
     },
 
     {
@@ -217,7 +223,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       year: "2004-2009",
       location: "Guyana",
       title: "Interactive Comic Book",
-      category: "Game-Based Learning",
+      category: "Interactive Learning",
       details: [
         {
           subtitle: "Super Gang and the Player",
@@ -225,6 +231,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
+      partner: "FHI360/USAID"
     },
 
     {
@@ -240,7 +247,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
-      partner: "FHI360/USAID PEPFAR",
+      partner: "FHI360/USAID/PEPFAR",
     },
 
     {
@@ -252,7 +259,8 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       details: [
         {
           subtitle: `Demand Generation for HIV Testing`,
-          description: `Partnership with Coca-Cola Foundation to produce an  award-winning Music Video montage of National Celebrities.`,
+          description: `Partnership with Coca-Cola to promote our award-winning campaign which included a Music Video montage of national celebrities and associated mass media and community based campaigns.
+          `,
         },
       ],
       partner: "FHI360",
@@ -263,7 +271,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       year: "2003",
       location: "Malawi",
       title: "Policy Guidance",
-      category: "Branding & Demand Generation",
+      category: "Policy Guidance & Advisory",
       details: [
         {
           subtitle: ``,
@@ -293,11 +301,12 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       year: "2001-2004",
       location: "Nepal",
       title: "Clean Delivery Product",
-      category: "Branding & Demand Generation",
+      category: "Policy Guidance & Advisory",
       details: [
         {
           subtitle: `National New-born Care Strategy`,
-          description: `National policy guidance and ideation and implementation support to women entrepreneurs for clean birthing kits`,
+          description: `National policy guidance on Maternal NeoNatal and Child Health and ideation and implementation support to women entrepreneurs for clean birthing kits
+          `,
         },
       ],
       partner: "Save the Children",
@@ -315,19 +324,20 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           description: `A private sector partnership with Unilever to produce an award winning and impactful campaign that promoted the benefits of good handwashing practices and ensured supply of affordable soap.`,
         },
       ],
-      partner: "UNICEF/World bank/Unilever",
+      partner: "UNICEF/World Bank/Unilever",
     },
 
     {
       id: "19",
       year: "2001-2003",
       location: "Bangladesh",
-      title: "Branding & Campaign",
+      title: "Branding & Mass Media Campaign",
       category: "Branding & Demand Generation",
       details: [
         {
           subtitle: `Bajee Quddus Wanna bet?`,
-          description: `HIV awareness campaign that leveraged humor and Bollywood-style character.
+          description: `Repositioning condoms from being perceived as purely as a family product to a disease prevention product by leveraging humor and Bollywood-style characters.
+
           `,
         },
       ],
@@ -342,28 +352,28 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       category: "Branding & Demand Generation",
       details: [
         {
-          subtitle: `IDEAL (Vietnam)`,
-          description: `Oral Contraceptives and Emergency Contraceptives (ECP)
+         
+          description: `Aligning consumer benefits such as radiant skin, energy, prosperity, and vibrancy to promote health products.`,
+        },
 
-          `,
+        {
+          subtitle: `IDEAL (Vietnam)`,
+          description: `Oral Contraceptives and Emergency Contraceptives (ECP)`,
         },
 
         {
           subtitle: `Diamond Lady (Cambodia)`,
-          description: `Oral Contraceptives 
-          `,
+          description: `Oral Contraceptives`,
         },
 
         {
           subtitle: `Nava Jeevan (Nepal)`,
-          description: `New Life Orange-flavored Oral Rehydration Salts for Children 
+          description: `New Life Orange-flavored Oral Rehydration Salts for Children
           `,
         },
-
         {
           subtitle: `Sunaulo Gulaf Oral Contraceptive Pills (Nepal)`,
-          description: `Aligning consumer benefits such as radiant skin, energy, prosperity, and vibrancy to promote health products.
-          `,
+          description: `Oral Contraceptive pills`,
         },
       ],
       partner: "KfW (German Development Bank)",
@@ -403,8 +413,8 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       id: "23",
       year: " 1996-1998",
       location: "Nepal",
-      title: "Communication Strategy",
-      category: "Branding & Demand Generation",
+      title: "Policy Guidance",
+      category: "Policy Guidance & Advisory",
       details: [
         {
           subtitle: `Visceral Leishmaniasis (Kala-Azar)`,
@@ -424,7 +434,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       details: [
         {
           subtitle: `APHAW Branded Condoms`,
-          description: `Position the brand as a trusted friend resulting in it becoming the largest selling condom in Asia.`,
+          description: `Positioned the brand as a trusted friend resulting in it becoming the largest selling condom in Asia.`,
         },
       ],
       partner: "PSI/UNICEF",
@@ -454,7 +464,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       details: [
         {
           subtitle: `Hifazat: Because Life is Precious`,
-          description: `Branded ‘uber-style’ taxis take pregnant women to care, where trained providers and certified health centers provide 24/7 seamless healthcare under this umbrella brand of protection.`,
+          description: `Branded ‘uber-style’ taxis to take pregnant women to care, where first ever government branded health centers offer 24/7 seamless healthcare under this umbrella brand of protection. An interactive voice response app nudges women to seek care.`,
         },
       ],
       partner: "IRC/USAID",
@@ -469,7 +479,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       details: [
         {
           subtitle: `Smiling Sun Clinic`,
-          description: `Branding refresh and outreach of health clinics to appeal to young married couples.`,
+          description: `Branding refresh and creation of ‘health kiosks’ l to young married couples.`,
         },
       ],
       partner: "Chemonics/USAID",
@@ -494,30 +504,15 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       id: "29",
       year: "2004-2007",
       location: "Bangladesh",
-      title: "Branded Drop-in Centers",
+      title: "Branded Drop-in Centers (160+)",
       category: "Social Franchising of Health Services",
       details: [
         {
           subtitle: `Modhumita (Sweet Friend)`,
-          description: `Drop in center for gay men, sex workers and injection drug users.`,
-        },
-      ],
-    },
-
-    {
-      id: "30",
-      year: "2004-2007",
-      location: "Bangladesh",
-      title: "Branded Drop-in Centers",
-      category: "Social Franchising of Health Services",
-      details: [
-        {
-          subtitle: `Modhumita (Sweet Friend)`,
-          description: `160 customized lounges and meeting places that attracted marginalized populations for testing and treatment for STIs including HIV.
+          description: `160+ customized club-like drop-in centers that attracted gay men, sex workers, and injection drug users  for testing and treatment for STIs including HIV.
           `,
         },
       ],
-      partner: "FHI360/MSH PEPFAR/USAID",
     },
 
     {
@@ -540,11 +535,11 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       year: "1995",
       location: "Nepal",
       title:
-        "Injectable contraceptive distribution, training and certification",
+        "Sangini",
       category: "Social Franchising of Health Services",
       details: [
         {
-          subtitle: ``,
+          subtitle: `Injectable contraceptive distribution, training and certification`,
           description: `A global first over-the-counter contraceptive distributed through a network of branded pharmacies with quality assured through mystery shopper checks.`,
         },
       ],
@@ -557,7 +552,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       backgroundImage:
         "",
     },
-    "Game-Based Learning": {
+    "Interactive Learning": {
       color: "#d7401a",
       backgroundImage:
         "",
@@ -569,6 +564,11 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
     },
     "Social Franchising of Health Services": {
       color: "#3d7a31",
+      backgroundImage:
+        "",
+    },
+    "Policy Guidance & Advisory": {
+      color: "#1471f6",
       backgroundImage:
         "",
     },
@@ -656,74 +656,13 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
     setupIntersectionObserver();
   }
 
-  // Setup Intersection Observer
-  function oldSetupIntersectionObserver() {
-    const observerOptions = {
-      threshold: 0.4,
-      rootMargin: "0px",
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("timeline-item--active");
-          const imageUrl = entry.target.querySelector(".timeline__img").src;
-          wholePage.style.backgroundImage = `url(${imageUrl})`;
-        } else {
-          entry.target.classList.remove("timeline-item--active");
-        }
-      });
-    }, observerOptions);
-
-    document
-      .querySelectorAll(".timeline-item")
-      .forEach((item) => observer.observe(item));
-  }
-
-  // Setup Intersection Observer
-  function olderSetupIntersectionObserver() {
-    const observerOptions = {
-      threshold: [0, 0.25, 0.5, 0.75, 1],
-      // Removed rootMargin from here
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        const viewportHeight = window.innerHeight;
-        const itemHeight = entry.target.clientHeight;
-        const rootMarginValue = Math.floor((viewportHeight - itemHeight) / 2);
-        const rootMargin = `${rootMarginValue}px 0px`;
-
-        // Update the rootMargin for the current entry dynamically
-        observer.unobserve(entry.target);
-        observer.observe(entry.target, { ...observerOptions, rootMargin });
-
-        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-          document
-            .querySelectorAll(".timeline-item--active")
-            .forEach((activeElement) => {
-              activeElement.classList.remove("timeline-item--active");
-            });
-          entry.target.classList.add("timeline-item--active");
-
-          const imageUrl = entry.target.querySelector(".timeline__img").src;
-          wholePage.style.backgroundImage = `url(${imageUrl})`;
-        } else {
-          entry.target.classList.remove("timeline-item--active");
-        }
-      });
-    }, observerOptions);
-
-    document
-      .querySelectorAll(".timeline-item")
-      .forEach((item) => observer.observe(item));
-  }
+  
 
   // Setup Intersection Observer
   function setupIntersectionObserver() {
     const observerOptions = {
-        threshold: 0.5,
-        rootMargin: "0px",
+        threshold: 0.4,
+        rootMargin: "40px",
     };
 
     const observer = new IntersectionObserver((entries) => {

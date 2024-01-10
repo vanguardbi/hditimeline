@@ -527,10 +527,8 @@ div.divider{
 }
 
 /* Colored Dots */
-.nav-item[data-category="Game-Based Learning"]::before,
-.nav-item[data-category="Branding & Demand Generation"]::before,
-.nav-item[data-category="Social Franchising of Health Services"]::before,
-.nav-item[data-category="Full Timeline"]::before {
+
+.nav-item::before {
   content: "";
   width: 15px;
   height: 15px;
@@ -548,7 +546,7 @@ div.divider{
   height: 1.01rem;
 }
 
-.nav-item[data-category="Game-Based Learning"]::before {
+.nav-item[data-category="Interactive Learning"]::before {
   background-color: #d7401a;
 }
 
@@ -563,6 +561,11 @@ div.divider{
 .nav-item[data-category="Full Timeline"]::before {
   background-color: #f8f8f8;
 }
+
+.nav-item[data-category="Policy Guidance & Advisory"]::before {
+  background-color: #1471f6;
+}
+
 
 .hamburger-icon {
   display: none !important; /* Hidden by default */
@@ -735,6 +738,7 @@ span.title{
   .nav-item a {
     display: block; /* Makes the link fill the entire width of nav-item */
     max-width: 70%;
+    cursor: pointer;
   }
 
 
