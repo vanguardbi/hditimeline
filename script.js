@@ -1,24 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   function preloadImage(src, callback) {
     const img = new Image();
     img.onload = callback; // Call the callback function when the image is loaded
     img.src = src;
-}
+  }
 
-function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
-  const upcomingItems = timelineData.slice(
+  function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
+    const upcomingItems = timelineData.slice(
       currentIndex,
       currentIndex + preloadCount
-  );
-  upcomingItems.forEach((item, index) => {
-      if (index === 0) { // Only preload the next immediate image with callback
-          preloadImage(`./assets/${item.id}.webp`, callback);
+    );
+    upcomingItems.forEach((item, index) => {
+      if (index === 0) {
+        // Only preload the next immediate image with callback
+        preloadImage(`./assets/${item.id}.webp`, callback);
       } else {
-          preloadImage(`./assets/${item.id}.webp`);
+        preloadImage(`./assets/${item.id}.webp`);
       }
-  });
-}
+    });
+  }
 
   // Cache commonly used elements
   const timelineContainer = document
@@ -43,7 +43,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
-      partner: 'USAID/Washington'
+      partner: "USAID/Washington",
     },
 
     {
@@ -59,7 +59,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           description: `A D2C game co-created with girls in Nepal to empower them in making choices, while gaining direct access to information and resources about their health and well-being.     `,
         },
       ],
-      partner: 'USAID/Nepal and CARE Nepal'
+      partner: "USAID/Nepal and CARE Nepal",
     },
 
     {
@@ -75,7 +75,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           description: `An award-winning D2C Game co-created with youth that lets them discover, explore, learn and play their way toward becoming empowered choice-makers.`,
         },
       ],
-      partner: 'USAID/Washington'
+      partner: "USAID/Washington",
     },
 
     {
@@ -91,7 +91,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
-      partner: 'Self-funded by HDI'
+      partner: "Self-funded by HDI",
     },
 
     {
@@ -134,7 +134,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           description: `Creating demand for good governance and citizen engagement among youth and women through mass media, social media, citizen reporting and engagement of journalists. `,
         },
       ],
-      partner: "Tetratech/USAID"
+      partner: "Tetratech/USAID",
     },
 
     {
@@ -151,7 +151,8 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
-      partner: "Options/Kreditanstalt fur Wiederaufbau (KfW) German Development Bank"
+      partner:
+        "Options/Kreditanstalt fur Wiederaufbau (KfW) German Development Bank",
     },
 
     {
@@ -168,7 +169,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
-      partner: "FHI Solutions/The Bill & Melinda Gates Foundation"
+      partner: "FHI Solutions/The Bill & Melinda Gates Foundation",
     },
 
     {
@@ -199,7 +200,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           description: `Agency for pregnant women and mothers to make decisions and seek care supported through an IVR service with advice from a female doctor. First ever public/private partnership with a telecom company.  `,
         },
       ],
-      partner: "International Rescue Committee (IRC)/USAID"
+      partner: "International Rescue Committee (IRC)/USAID",
     },
 
     {
@@ -231,7 +232,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
           `,
         },
       ],
-      partner: "FHI360/USAID"
+      partner: "FHI360/USAID",
     },
 
     {
@@ -352,7 +353,6 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       category: "Branding & Demand Generation",
       details: [
         {
-         
           description: `Aligning consumer benefits such as radiant skin, energy, prosperity, and vibrancy to promote health products.`,
         },
 
@@ -534,8 +534,7 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
       id: "32",
       year: "1995",
       location: "Nepal",
-      title:
-        "Sangini",
+      title: "Sangini",
       category: "Social Franchising of Health Services",
       details: [
         {
@@ -549,28 +548,23 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
   const categorySettings = {
     "Full Timeline": {
       color: "#f8f8f8",
-      backgroundImage:
-        "",
+      backgroundImage: "",
     },
     "Interactive Learning": {
       color: "#d7401a",
-      backgroundImage:
-        "",
+      backgroundImage: "",
     },
     "Branding & Demand Generation": {
       color: "#e8a425",
-      backgroundImage:
-        "",
+      backgroundImage: "",
     },
     "Social Franchising of Health Services": {
       color: "#3d7a31",
-      backgroundImage:
-        "",
+      backgroundImage: "",
     },
     "Policy Guidance & Advisory": {
       color: "#1471f6",
-      backgroundImage:
-        "",
+      backgroundImage: "",
     },
   };
 
@@ -610,7 +604,9 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
         : "";
       let content = `
  
-          <div class="timeline-item ${item.id === "5" ? "long" : ""}" data-text="${item.year}">     
+          <div class="timeline-item ${
+            item.id === "5" ? "long" : ""
+          }" data-text="${item.year}">     
           <div class="year">
               <h3>${item.year}</h3> 
               <div class="dot"></div>         
@@ -621,7 +617,9 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
                       <div class="title_content">
                             <span class="category">${item.category}</span>
                             <div class="divider" style="background-color: ${dividerColor};"></div>
-                            <p class="location">${item.location} ${sublocationContent}<span> </span></p>
+                            <p class="location">${
+                              item.location
+                            } ${sublocationContent}<span> </span></p>
                       </div>
                       <p class="title">${item.title}</p> 
                       ${detailsContent}
@@ -633,7 +631,6 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
  
         `;
 
-       
       timelineContainer.insertAdjacentHTML("beforeend", content);
     });
 
@@ -656,34 +653,37 @@ function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
     setupIntersectionObserver();
   }
 
-  
-
   // Setup Intersection Observer
   function setupIntersectionObserver() {
     const observerOptions = {
-        threshold: 0.4,
-        rootMargin: "40px",
+      root: null,
+      threshold: 0.5,
+      rootMargin: "10px",
     };
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("timeline-item--active");
-                const imageUrl = entry.target.querySelector(".timeline__img").src;
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("timeline-item--active");
+          const imageUrl = entry.target.querySelector(".timeline__img").src;
 
-                // Preload next image and change background after it's loaded
-                const currentIndex = Array.from(document.querySelectorAll('.timeline-item')).indexOf(entry.target);
-                preloadUpcomingImages(currentIndex, 6, () => {
-                    wholePage.style.backgroundImage = `url(${imageUrl})`;
-                });
-            } else {
-                entry.target.classList.remove("timeline-item--active");
-            }
-        });
+          // Preload next image and change background after it's loaded
+          const currentIndex = Array.from(
+            document.querySelectorAll(".timeline-item")
+          ).indexOf(entry.target);
+          preloadUpcomingImages(currentIndex, 6, () => {
+            wholePage.style.backgroundImage = `url(${imageUrl})`;
+          });
+        } else {
+          entry.target.classList.remove("timeline-item--active");
+        }
+      });
     }, observerOptions);
 
-    document.querySelectorAll(".timeline-item").forEach((item) => observer.observe(item));
-}
+    document
+      .querySelectorAll(".timeline-item")
+      .forEach((item) => observer.observe(item));
+  }
 
   // Setup navigation
   function setupNavigation() {
