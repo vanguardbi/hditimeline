@@ -10,6 +10,71 @@
   line-height: 1;
 }
 
+/* NAVBAR */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 25px;
+  background-color: #fff; /* Set to the desired background color */
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px; /* Or the max width you desire */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; /* Or any other size you want */
+  width: auto; /* This will maintain the aspect ratio of the SVG */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.navbar a {
+  color: #000; /* Adjust to match the text color for the menu items */
+  text-decoration: none;
+  padding: 0 15px; /* Adjust the spacing around the links */
+  font-size: 0.7em;
+  text-transform: uppercase; /* Uppercase menu text */
+}
+
+.navbar a:hover {
+  color: #7d1e57; /* Change the color for hover state */
+  /* text-decoration: underline; Adds underline on hover */
+}
+
+/* Responsive design adjustments can be made as well with media queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo img {
+    margin-bottom: 10px; /* Adds space between logo and navbar on small screens */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    padding: 5px 0; /* Adjusts padding for stacked menu items */
+  }
+}
+
+/* END OF NAVBAR */
+
 .loader {
   border: 16px solid #f3f3f3;
   border-top: 16px solid #3498db;
@@ -38,11 +103,13 @@ html, body{
 
 .nav-item.home a{
   text-decoration: underline;
+  cursor: pointer;
 }
 
-.nav-item.home{
+/* .nav-item.home{
   padding-top: 1rem;
-}
+  cursor: pointer;
+} */
 
 h4{
   margin: 0px;
@@ -101,10 +168,7 @@ div#timeline-1 {
   margin-bottom: 35px;
 }
 
-
-
-
-button {
+.button {
   border: none;
   color: #f8f8f8;
   padding: 10px 20px;
@@ -145,6 +209,10 @@ p.desc {
   width: 600px;
   max-width: 100%;
   font-size: 0.8rem;
+}
+
+.long .subtitle{
+  font-size: 2.5em;
 }
 
 
@@ -330,6 +398,7 @@ div.divider{
   .title, .subtitle{
     line-height: 1.4;
   }
+  
 
   .timeline-item--active .year h3 {
     font-size: 2rem;
@@ -481,7 +550,7 @@ div.divider{
 /* Common Styles for All Screens */
 #floating-nav .items-container {
   position: fixed;
-  top:40px;
+  top:110px;
   left: 40px; /* Align to the top right corner */
   border-radius: 10px;
   z-index: 0;
@@ -612,7 +681,6 @@ div.divider{
   font-weight: bold;
   font-size: 3.5em;
   margin-top: -45px;
-
 }
 
 span.title{
@@ -670,8 +738,8 @@ span.title{
     height: 100vh;
     top: 0;
     right: 0;
-    background-color: rgb(43, 35, 35); 
-    color: #f8f8f8;
+    background-color: #fff; 
+    color: #000;
     flex-direction: column; /* Stack items vertically */
     justify-content: space-around; /* Evenly distribute space around items */
     align-items: center; /* Center items horizontally */
@@ -687,6 +755,10 @@ span.title{
     display: flex; /* Ensure it's always a flex container */
   }
 
+  header{
+    display: none;
+  }
+
   .category, .location {
     font-size: 1.1rem;
     line-height: 1.4rem;
@@ -698,6 +770,10 @@ span.title{
 
   .subtitle {
     font-size: 1.4rem;
+  }
+
+  .long .subtitle{
+    font-size: 1.4em;
   }
 
   .desc {
@@ -722,7 +798,11 @@ span.title{
 
   #floating-nav .items-container a {
     text-align: start;
-    color: #f8f8f8;
+    color: #000;
+  }
+
+  header.header{
+    display: none;
   }
 
   .nav-item {

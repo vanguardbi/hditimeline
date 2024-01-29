@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "India",
       title: "MOBILE GAME",
       category: "Interactive Learning",
+     
       details: [
         {
           subtitle: "Coming Up: A Game for Boys",
@@ -69,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Mobile Game",
       category: "Interactive Learning",
       partner: "PSI/UNDP/FAO",
+      link: "https://www.howard-delafield.com/game-of-choice-not-chance",
       details: [
         {
           subtitle: "Go Nisha Go",
@@ -84,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: " USA, Great Falls National Park, Potomac, Maryland",
       title: "Digital Simulation",
       category: "Interactive Learning",
+      link: "https://www.howard-delafield.com/loop-trail-quest",
       details: [
         {
           subtitle: "Loop Trail Quest",
@@ -100,6 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "GLOBAL - 24 Priority Countries",
       title: "Games for Program Planning and Design",
       category: "Interactive Learning",
+      link: "https://www.howard-delafield.com/accelerate-behaviors-project",
       details: [
         {
           subtitle: "Point & Click Fever Game",
@@ -125,9 +129,10 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: "8",
       year: "2011-2014",
-      location: "Guyana",
+      location: "Bangladesh",
       title: "Strengthening Democratic Local Governance",
       category: "Branding & Demand Generation",
+      link:"https://www.howard-delafield.com/sdlg",
       details: [
         {
           subtitle: "We are the government",
@@ -143,6 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Caribbean Region: Guyana, Barbados, Trinidad, & Jamaica",
       title: "Music Videos",
       category: "Branding & Demand Generation",
+      link: "https://www.howard-delafield.com/carisma",
       details: [
         {
           subtitle: "Friendz",
@@ -225,6 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Guyana",
       title: "Interactive Comic Book",
       category: "Interactive Learning",
+     
       details: [
         {
           subtitle: "Super Gang and the Player",
@@ -241,6 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Guyana",
       title: "Multi-Media Interventions",
       category: "Branding & Demand Generation",
+      link: "https://www.howard-delafield.com/gharp",
       details: [
         {
           subtitle: `"Don’t Dis Me"`,
@@ -257,6 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Ethiopia",
       title: "HIV Compassion Campaign",
       category: "Branding & Demand Generation",
+      link:"https://www.howard-delafield.com/hiv-aids-interventions",
       details: [
         {
           subtitle: `Demand Generation for HIV Testing`,
@@ -319,9 +328,10 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Nepal",
       title: "Hygiene Product",
       category: "Branding & Demand Generation",
+      link:"https://www.howard-delafield.com/nepal-handwashing-with-soap-initiative",
       details: [
         {
-          subtitle: `Handwriting with soap`,
+          subtitle: `Handwashing with soap`,
           description: `A private sector partnership with Unilever to produce an award winning and impactful campaign that promoted the benefits of good handwashing practices and ensured supply of affordable soap.`,
         },
       ],
@@ -353,7 +363,9 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "Branding & Demand Generation",
       details: [
         {
-          description: `Aligning consumer benefits such as radiant skin, energy, prosperity, and vibrancy to promote health products.`,
+          subtitle: "",
+          description: `Aligning consumer benefits such as radiant skin, energy, prosperity, and vibrancy to promote health products.    
+          `,
         },
 
         {
@@ -446,6 +458,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Myanmar",
       title: "Fuel-Efficient Stoves",
       category: "Branding & Demand Generation",
+      link:"https://www.howard-delafield.com/micro-enterprises-and-product-development",
       details: [
         {
           subtitle: `A-1 Savings`,
@@ -461,6 +474,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Pakistan",
       title: "Branded 24/7 Health Centers, Transport, and Decision Support",
       category: "Social Franchising of Health Services",
+      link: "https://www.howard-delafield.com/pride-project",
       details: [
         {
           subtitle: `Hifazat: Because Life is Precious`,
@@ -491,6 +505,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Guyana",
       title: "A coalition of 43 businesses",
       category: "Social Franchising of Health Services",
+      link:"https://www.howard-delafield.com/guyana-business-coalition",
       details: [
         {
           subtitle: `Guyana Business Coalition`,
@@ -506,6 +521,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Bangladesh",
       title: "Branded Drop-in Centers (160+)",
       category: "Social Franchising of Health Services",
+      link:"https://www.howard-delafield.com/modhumita",
       details: [
         {
           subtitle: `Modhumita (Sweet Friend)`,
@@ -601,11 +617,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const partnerContent = item.partner
         ? `<span class="partner">${item.partner}</span>`
-        : "";
+        : "";   
+
+        let readMoreButton = '';
+        if (item.link) {
+          readMoreButton = `<a href="${item.link}" target="_blank" class="button" style="background-color: ${dividerColor};">Read more</a>`;
+        }
       let content = `
  
           <div class="timeline-item ${
-            item.id === "5" ? "long" : ""
+            item.id === "5" || item.id === "20" ? "long" : ""
           }" data-text="${item.year}">     
           <div class="year">
               <h3>${item.year}</h3> 
@@ -624,7 +645,8 @@ document.addEventListener("DOMContentLoaded", () => {
                       <p class="title">${item.title}</p> 
                       ${detailsContent}
                       <p class="partnerContainer"> ${partnerContent}</p>
-                      <button style="background-color: ${dividerColor};">Read more</button>
+                      ${readMoreButton}
+
                     </div>
               </div>
           </div>
