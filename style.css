@@ -18,11 +18,11 @@
   align-items: center;
   padding: 25px 25px;
   background-color: #fff; /* Set to the desired background color */
+  height: 109px;
 }
 
 .container {
   width: 100%;
-  max-width: 1500px; /* Or the max width you desire */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -30,21 +30,24 @@
 }
 
 .logo img {
-  height: 40px; /* Or any other size you want */
+  height: 45px; /* Or any other size you want */
   width: auto; /* This will maintain the aspect ratio of the SVG */
+  margin: 0px 6px;
+  margin-top: -3.8px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   padding: 20px 0px;
+  margin-right: -1.5px;
 }
 
 .navbar a {
   color: #000; /* Adjust to match the text color for the menu items */
   text-decoration: none;
-  padding: 0 15px; /* Adjust the spacing around the links */
-  font-size: 0.7em;
+  padding: 2px 16.7px; /* Adjust the spacing around the links */
+  font-size: 0.79em;
   text-transform: uppercase; /* Uppercase menu text */
 }
 
@@ -329,12 +332,12 @@ p.desc {
 }
 
 .year div{
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 100%;
   position: absolute;
-  left: calc(105%);
+  left: calc(105.8%);
 }
 
 .title, .subtitle{
@@ -440,7 +443,7 @@ div.divider{
     padding: 3em 0em ;
     margin-top: -10px;
     max-width: 90%;
-    font-size: 0.7em;
+    font-size: 10px;
   
   }
 
@@ -550,7 +553,7 @@ div.divider{
 /* Common Styles for All Screens */
 #floating-nav .items-container {
   position: fixed;
-  top:110px;
+  bottom:40px;
   left: 40px; /* Align to the top right corner */
   border-radius: 10px;
   z-index: 0;
