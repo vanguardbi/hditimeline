@@ -469,12 +469,12 @@ div.divider{
   }
 
   .year div{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 100%;
     position: absolute;
-    left: calc(109%);
+    left: calc(140%);
   }
 
   .year h3{
