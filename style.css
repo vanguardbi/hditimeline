@@ -332,12 +332,12 @@ p.desc {
 }
 
 .year div{
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 100%;
   position: absolute;
-  left: calc(105.8%);
+  left: calc(105%);
 }
 
 .title, .subtitle{
@@ -469,12 +469,12 @@ div.divider{
   }
 
   .year div{
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 100%;
     position: absolute;
-    left: calc(140%);
+    left: calc(109%);
   }
 
   .year h3{
@@ -602,8 +602,8 @@ div.divider{
 
 .nav-item::before {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   position: absolute;
   left: 0;
