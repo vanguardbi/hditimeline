@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "India",
       title: "MOBILE GAME",
       category: "Interactive Learning",
-     
+
       details: [
         {
           subtitle: "Coming Up: A Game for Boys",
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Bangladesh",
       title: "Strengthening Democratic Local Governance",
       category: "Branding & Demand Generation",
-      link:"https://www.howard-delafield.com/sdlg",
+      link: "https://www.howard-delafield.com/sdlg",
       details: [
         {
           subtitle: "We are the government",
@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Guyana",
       title: "Interactive Comic Book",
       category: "Interactive Learning",
-     
+
       details: [
         {
           subtitle: "Super Gang and the Player",
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Ethiopia",
       title: "HIV Compassion Campaign",
       category: "Branding & Demand Generation",
-      link:"https://www.howard-delafield.com/hiv-aids-interventions",
+      link: "https://www.howard-delafield.com/hiv-aids-interventions",
       details: [
         {
           subtitle: `Demand Generation for HIV Testing`,
@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Nepal",
       title: "Hygiene Product",
       category: "Branding & Demand Generation",
-      link:"https://www.howard-delafield.com/nepal-handwashing-with-soap-initiative",
+      link: "https://www.howard-delafield.com/nepal-handwashing-with-soap-initiative",
       details: [
         {
           subtitle: `Handwashing with soap`,
@@ -458,7 +458,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Myanmar",
       title: "Fuel-Efficient Stoves",
       category: "Branding & Demand Generation",
-      link:"https://www.howard-delafield.com/micro-enterprises-and-product-development",
+      link: "https://www.howard-delafield.com/micro-enterprises-and-product-development",
       details: [
         {
           subtitle: `A-1 Savings`,
@@ -505,7 +505,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Guyana",
       title: "A coalition of 43 businesses",
       category: "Social Franchising of Health Services",
-      link:"https://www.howard-delafield.com/guyana-business-coalition",
+      link: "https://www.howard-delafield.com/guyana-business-coalition",
       details: [
         {
           subtitle: `Guyana Business Coalition`,
@@ -521,7 +521,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Bangladesh",
       title: "Branded Drop-in Centers (160+)",
       category: "Social Franchising of Health Services",
-      link:"https://www.howard-delafield.com/modhumita",
+      link: "https://www.howard-delafield.com/modhumita",
       details: [
         {
           subtitle: `Modhumita (Sweet Friend)`,
@@ -584,6 +584,42 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
+  
+  const observerCallback = (entries, observer) => {
+    // Only run this effect on screens wider than 768px
+    if (window.innerWidth > 768) {
+      entries.forEach((entry) => {
+        const itemsContainer = document.querySelector("#floating-nav .items-container");
+        if (entry.isIntersecting) {
+          // The header is halfway across the screen, gradually show the items-container
+          itemsContainer.style.opacity = "0";
+          // Ensure the element is not clickable when fully transparent
+          itemsContainer.style.pointerEvents = "none";
+        } else {
+          // The header is not halfway across the screen, gradually hide the items-container
+          itemsContainer.style.opacity = "1";
+          // Make the element clickable again
+          itemsContainer.style.pointerEvents = "all";
+        }
+      });
+    }
+  };
+
+  // Step 2: Set up the Intersection Observer options
+  const observerOptions = {
+    root: null, // observing relative to the viewport
+    threshold: 0.5, // callback is executed when 50% of the element is visible
+  };
+
+  // Step 3: Create the Intersection Observer instance
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  // Step 4: Attach the Intersection Observer to the header
+  const heroText = document.querySelector(".hero-text"); // Assuming this is the header with "A Timeline of Global Innovations"
+  if (heroText) {
+    observer.observe(heroText);
+  }
+
   function renderTimeline(category = "Full Timeline") {
     timelineContainer.innerHTML = ""; // Clear existing content
 
@@ -617,12 +653,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const partnerContent = item.partner
         ? `<span class="partner">${item.partner}</span>`
-        : "";   
+        : "";
 
-        let readMoreButton = '';
-        if (item.link) {
-          readMoreButton = `<a href="${item.link}" target="_blank" class="button" style="background-color: ${dividerColor};">Read more</a>`;
-        }
+      let readMoreButton = "";
+      if (item.link) {
+        readMoreButton = `<a href="${item.link}" target="_blank" class="button" style="background-color: ${dividerColor};">Read more</a>`;
+      }
       let content = `
  
           <div class="timeline-item ${

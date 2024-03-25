@@ -563,6 +563,9 @@ div.divider{
   padding: 10px;
   color: white;
   min-width: 400px;
+  transition: opacity 0.5s ease-out; /* Adjust the time as needed */
+  opacity: 0; 
+
 }
 
 #floating-nav:before:hover {
@@ -733,8 +736,63 @@ span.title{
   transform: translate(-50%, -50%); /* Positions the second bar */
 }
 
+.hero-section {
+  background-image: url('assets/1.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  position: relative;
+  background-position: center center;
+}
+.hero-section .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 46px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: 700;
+  max-width: 50%;
+  padding: 20px;
+}
+.hero-section::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.border-area {
+  display: flex;
+}
+.border-line {
+  height: 16px;
+  flex: auto;
+}
+.border-line.border1 {
+  background-color: #7d1e57;
+}
+.border-line.border2 {
+  background-color: #d7401a;
+}
+.border-line.border3 {
+  background-color: #e8a425;
+}
+.border-line.border4 {
+  background-color: #3d7a31;
+}
+.border-line.border5 {
+  background-color: #1371f7;
+}
 /* Full-Screen Floating Nav for Mobile */
 @media only screen and (max-width: 767px) {
+  .timeline-container {
+    background-attachment: scroll;
+  }
   #floating-nav {
     position: fixed;
     width: 100%;
@@ -756,6 +814,7 @@ span.title{
       100%
     ); /* Initially position off-screen to the right */
     display: flex; /* Ensure it's always a flex container */
+    
   }
 
   header{
@@ -797,6 +856,7 @@ span.title{
     padding: 200px 0px;
     top: 0px;
     left: 40px;
+
   }
 
   #floating-nav .items-container a {
@@ -846,6 +906,11 @@ span.title{
     text-align: center;
     margin-bottom: 80px;
     position: relative;
+  }
+  .hero-section .hero-text {
+    max-width: 100%;
+    font-size: 36px;
+    line-height: 52px;
   }
 
 }
