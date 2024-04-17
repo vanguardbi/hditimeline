@@ -17,8 +17,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px 25px;
+  padding-top: 27.5px;
   background-color: #fff; /* Set to the desired background color */
-  height: 109px;
+  height: 107px;
 }
 
 .container {
@@ -28,6 +29,8 @@
   justify-content: space-between;
   align-items: center;
 }
+
+
 
 .logo img {
   height: 45px; /* Or any other size you want */
@@ -40,14 +43,16 @@
   display: flex;
   align-items: center;
   padding: 20px 0px;
+  padding-bottom: 56px;
   margin-right: -1.5px;
 }
 
-.navbar a {
+.navbar > a {
   color: #000; /* Adjust to match the text color for the menu items */
   text-decoration: none;
-  padding: 2px 16.7px; /* Adjust the spacing around the links */
-  font-size: 0.79em;
+  padding: 2.1px 13.7px; /* Adjust the spacing around the links */
+  font-size: 12.4px;
+  letter-spacing: 0em;
   text-transform: uppercase; /* Uppercase menu text */
 }
 
@@ -55,6 +60,18 @@
   color: #7d1e57; /* Change the color for hover state */
   /* text-decoration: underline; Adds underline on hover */
 }
+
+.navbar .social{
+  width: 67px;
+  padding: 0px 0.5px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 19px;
+  margin-right: 13px;
+}
+
+
+
 
 /* Responsive design adjustments can be made as well with media queries */
 @media (max-width: 768px) {
@@ -71,7 +88,7 @@
     align-items: flex-start;
   }
 
-  .navbar a {
+  .navbar > a {
     padding: 5px 0; /* Adjusts padding for stacked menu items */
   }
 }
