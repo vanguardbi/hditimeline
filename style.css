@@ -16,10 +16,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 25px;
-  padding-top: 27.5px;
-  background-color: #fff; /* Set to the desired background color */
+  padding: 25px 350px;
+  padding-top: 70px;
   height: 107px;
+  background-color:#7d1e57;
 }
 
 .container {
@@ -31,7 +31,7 @@
 }
 
 .logo img {
-  height: 45px; /* Or any other size you want */
+  height: 4em; /* Or any other size you want */
   width: auto; /* This will maintain the aspect ratio of the SVG */
   margin: 0px 6px;
   margin-top: -3.8px;
@@ -43,26 +43,52 @@
   padding: 20px 0px;
   padding-bottom: 56px;
   margin-right: -1.5px;
+
 }
 
 .navbar > a {
   color: #000; /* Adjust to match the text color for the menu items */
   text-decoration: none;
   padding: 2.1px 13.7px; /* Adjust the spacing around the links */
-  font-size: 12.4px;
+  font-size: 16px;
+  font-weight: bold;
   letter-spacing: 0em;
-  text-transform: uppercase; /* Uppercase menu text */
+  color: #fff;
+  /* text-transform: uppercase; Uppercase menu text */
 }
 
-.navbar a:hover {
-  color: #7d1e57; /* Change the color for hover state */
-  /* text-decoration: underline; Adds underline on hover */
+.navbar a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding: 2.1px 13.7px; /* Adjust the spacing around the links */
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0em;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* Adjusts the position of the underline */
+  width: 100%;
+  height: 3px; /* Adjusts the thickness of the underline */
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .navbar .social {
   width: 67px;
   padding: 0px 0.5px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   margin-left: 19px;
   margin-right: 13px;
@@ -742,7 +768,6 @@ span.title {
   content: "";
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
   left: 0;
@@ -891,3 +916,128 @@ span.title {
     line-height: 52px;
   }
 }
+
+/* Existing media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .timeline-container {
+    background-attachment: fixed;
+    background-size: cover; /* Adjust background size to fit within container */
+    background-position: center center; /* Center the background image */
+  }
+  
+  #floating-nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-around; /* Evenly distribute space around items */
+    align-items: center; /* Center items horizontally */
+    padding: 10px 0px; /* Padding for the entire nav */
+    max-height: 100vh;
+    max-width: 100vw;
+    z-index: 3;
+    font-size: 1.1rem;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(100%); /* Initially position off-screen to the right */
+    display: flex; /* Ensure it's always a flex container */
+  }
+
+  header {
+    display: none;
+  }
+
+  .category,
+  .location {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .long .subtitle {
+    font-size: 1.4em;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  #floating-nav.active {
+    transform: translateX(0); /* Slide in */
+  }
+
+  #floating-nav .items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
+    padding: 200px 0px;
+    top: 0px;
+    left: 40px;
+  }
+
+  #floating-nav .items-container a {
+    text-align: start;
+    color: #000;
+  }
+
+  header.header {
+    display: none;
+  }
+
+  .nav-item {
+    width: 100%; /* Full width for better layout */
+    /* text-align: center; Center-align the text */
+    max-width: 100%;
+  }
+
+  nav-item::before {
+    margin-left: 120px;
+  }
+
+  .nav-item a {
+    display: block; /* Makes the link fill the entire width of nav-item */
+    max-width: 70%;
+    cursor: pointer;
+  }
+
+  .hamburger-icon {
+    display: flex !important; /* Show the hamburger icon as a flex container on mobile */
+    transition: transform 0.3s; /* Smooth transition for rotation */
+  }
+
+  .timeline-header__title {
+    font-size: 2.2rem;
+  }
+
+  .timeline-item {
+    margin: 0px;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  .timeline-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  .hero-section .hero-text {
+    max-width: 100%;
+    font-size: 36px;
+    line-height: 52px;
+  }
+}
+
