@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   color: #eee;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 1;
 }
@@ -29,8 +29,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
-
 
 .logo img {
   height: 45px; /* Or any other size you want */
@@ -61,7 +59,7 @@
   /* text-decoration: underline; Adds underline on hover */
 }
 
-.navbar .social{
+.navbar .social {
   width: 67px;
   padding: 0px 0.5px;
   display: flex;
@@ -69,9 +67,6 @@
   margin-left: 19px;
   margin-right: 13px;
 }
-
-
-
 
 /* Responsive design adjustments can be made as well with media queries */
 @media (max-width: 768px) {
@@ -109,19 +104,24 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #loader {
   display: block; /* Show loader initially */
 }
 
-html, body{
+html,
+body {
   background-color: #333333;
 }
 
-.nav-item.home a{
+.nav-item.home a {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -131,7 +131,7 @@ html, body{
   cursor: pointer;
 } */
 
-h4{
+h4 {
   margin: 0px;
 }
 
@@ -151,18 +151,17 @@ div#timeline-1 {
 .partner {
   display: inline-block;
   border: 0px solid #000; /* black border */
-  border-radius: 50px; /* rounded corners */;
+  border-radius: 50px; /* rounded corners */
   font-style: italic;
 }
 
-.sublocation{
+.sublocation {
   text-transform: uppercase;
   margin-top: -10px;
   font-size: 0.8em;
- 
 }
 
-.headings{
+.headings {
   display: flex;
   margin: 0 auto;
   padding-left: 300px;
@@ -183,7 +182,7 @@ div#timeline-1 {
   width: 100%;
 }
 
-.details{
+.details {
   margin-top: -35px;
   margin-bottom: 35px;
 }
@@ -210,7 +209,6 @@ p.desc {
   line-height: 25px;
   padding-bottom: 0px;
   margin-bottom: -30px;
- 
 }
 
 .timeline__content-desc {
@@ -224,20 +222,16 @@ p.desc {
 
 .timeline__text {
   background-color: #7d1e57;
-  padding: 3em 0em ;
+  padding: 3em 0em;
   margin-top: -10px;
   width: 600px;
   max-width: 100%;
   font-size: 0.8rem;
 }
 
-.long .subtitle{
+.long .subtitle {
   font-size: 2.5em;
 }
-
-
-
-
 
 /*The vertical line*/
 .timeline:before {
@@ -253,10 +247,7 @@ p.desc {
 }
 
 @media only screen and (max-width: 767px) {
-
 }
-
-
 
 .timeline-item {
   padding: 40px 0;
@@ -272,29 +263,23 @@ p.desc {
   align-self: center;
   margin-left: 310px;
   margin-bottom: 300px;
-
 }
 
-.timeline-item.long p.subtitle{
+.timeline-item.long p.subtitle {
   padding-top: 40px;
 }
 
-.timeline-item.long p.desc{
+.timeline-item.long p.desc {
   padding: 0px;
-  
 }
 
-.timeline-item.long button{
+.timeline-item.long button {
   margin-top: 28px;
 }
 
-.timeline-item.long .partnerContainer{
+.timeline-item.long .partnerContainer {
   display: none;
 }
-
-
-
-
 
 /* .timeline-item:before {
   content: attr(data-text);
@@ -314,7 +299,7 @@ p.desc {
   right: calc(-100% - 40px);
 } */
 
-.year{
+.year {
   /* content: attr(data-text); */
   /* letter-spacing: 3px; */
   /* min-height: 20px;
@@ -326,11 +311,11 @@ p.desc {
   font-family: "Montserrat", sans-serif;
   /* top: 50%; */
   /* margin-top: -5px; */
-  padding-left: 15px; 
+  padding-left: 15px;
   left: calc(-124.1%);
   display: flex;
   flex-direction: row;
-  align-items: center;  
+  align-items: center;
   z-index: 3;
 }
 
@@ -345,10 +330,9 @@ p.desc {
 
 .timeline-item--active .year h3 {
   font-size: 3.6rem;
- 
 }
 
-.year div{
+.year div {
   width: 20px;
   height: 20px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -357,7 +341,8 @@ p.desc {
   left: calc(105%);
 }
 
-.title, .subtitle{
+.title,
+.subtitle {
   line-height: 1.2;
 }
 
@@ -367,7 +352,7 @@ p.desc {
 
 .timeline-item::before {
   right: auto;
-  text-align: right; 
+  text-align: right;
   /* left: calc(-100% - 40px); */
   padding-left: 0;
   border-left: none;
@@ -377,18 +362,13 @@ p.desc {
   left: -109.5%;
   font-size: large;
   color: white;
-  transition: opacity 0.3s ease, top 0.3s ease, font-size 0.3s ease; 
-
+  transition: opacity 0.3s ease, top 0.3s ease, font-size 0.3s ease;
 }
-
-
 
 .timeline-item--active {
   opacity: 1;
   transform: translateY(0);
 }
-
-
 
 .timeline-item--active::before {
   top: 50%;
@@ -396,18 +376,15 @@ p.desc {
   opacity: 1;
   font-size: 3em;
   font-weight: bold;
-
 }
 
-div.divider{
-  width:100%;
-  height: 6px;  
+div.divider {
+  width: 100%;
+  height: 6px;
   margin: 10px 0px;
-
 }
 
 @media only screen and (max-width: 767px) {
- 
   .timeline-item {
     align-self: baseline !important;
     width: 100%;
@@ -415,10 +392,10 @@ div.divider{
     flex-direction: column;
   }
 
-  .title, .subtitle{
+  .title,
+  .subtitle {
     line-height: 1.4;
   }
-  
 
   .timeline-item--active .year h3 {
     font-size: 2rem;
@@ -430,7 +407,7 @@ div.divider{
     top: 0px;
   }
 
-  .headings{
+  .headings {
     display: flex;
     margin: 0 auto;
     padding-left: 40px;
@@ -457,14 +434,13 @@ div.divider{
 
   .timeline__text {
     background-color: #7d1e57;
-    padding: 3em 0em ;
+    padding: 3em 0em;
     margin-top: -10px;
     max-width: 90%;
     font-size: 10px;
-  
   }
 
-  .year{
+  .year {
     margin-left: 0px;
     flex-direction: row-reverse;
     font-size: 2rem;
@@ -473,7 +449,7 @@ div.divider{
     width: 100;
   }
 
-  .year h3{
+  .year h3 {
     width: 400px;
     position: absolute;
     left: 65px;
@@ -482,10 +458,10 @@ div.divider{
     line-height: normal;
     max-width: 75vw;
     font-size: 1.5rem;
-    margin: 0px
+    margin: 0px;
   }
 
-  .year div{
+  .year div {
     width: 20px;
     height: 20px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -494,10 +470,9 @@ div.divider{
     left: calc(109%);
   }
 
-  .year h3{
+  .year h3 {
     /* font-size: 1.2em; */
   }
-
 }
 
 .timeline__img {
@@ -514,10 +489,8 @@ div.divider{
   background-attachment: fixed;
   background-size: cover;
   background-image: url("./assets/1.jpg");
- min-height: 100vh;
+  min-height: 100vh;
 }
-
-
 
 .timeline-container:before {
   position: absolute;
@@ -535,15 +508,12 @@ div.divider{
   position: relative;
 }
 
-
-
 .timeline-header__title {
   font-size: 3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   margin: 0;
   /* text-align: center; */
-  
 }
 
 .timeline-header__subtitle {
@@ -559,7 +529,7 @@ div.divider{
   padding: 60px 0;
   text-align: center;
   color: #ddd;
-  background-color: #121212
+  background-color: #121212;
 }
 
 .demo-footer a {
@@ -570,7 +540,7 @@ div.divider{
 /* Common Styles for All Screens */
 #floating-nav .items-container {
   position: fixed;
-  bottom:40px;
+  bottom: 40px;
   left: 40px; /* Align to the top right corner */
   border-radius: 10px;
   z-index: 0;
@@ -581,8 +551,7 @@ div.divider{
   color: white;
   min-width: 400px;
   transition: opacity 0.5s ease-out; /* Adjust the time as needed */
-  opacity: 0; 
-
+  opacity: 0;
 }
 
 #floating-nav:before:hover {
@@ -658,7 +627,6 @@ div.divider{
   background-color: #1471f6;
 }
 
-
 .hamburger-icon {
   display: none !important; /* Hidden by default */
   position: fixed;
@@ -684,20 +652,18 @@ div.divider{
   transform: rotate(45deg); /* Rotates the icon */
 }
 
-.title_content{
+.title_content {
   font-size: 1.3em;
 }
 
-
-.title{
+.title {
   font-size: 2.8rem;
   text-transform: uppercase;
   font-weight: bold;
   margin: 40px 0px;
-
 }
 
-.subtitle{
+.subtitle {
   margin: 0px;
   padding: 0px;
   /* padding-bottom: 20px; */
@@ -706,7 +672,7 @@ div.divider{
   margin-top: -45px;
 }
 
-span.title{
+span.title {
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -715,10 +681,10 @@ span.title{
   margin-bottom: 0px;
   margin-top: 5px;
   font-weight: bold;
-  
 }
 
-.location, .category{
+.location,
+.category {
   font-size: 1.2em;
   /* line-height: 1; */
 }
@@ -727,12 +693,11 @@ span.title{
   font-weight: bold;
 }
 
-.desc{
+.desc {
   padding-bottom: 40px;
   font-size: 1.1rem;
   padding-top: 30px;
 }
-
 
 .hamburger-icon.active::before,
 .hamburger-icon.active::after {
@@ -754,19 +719,18 @@ span.title{
 }
 
 .hero-section {
-  background-image: url('assets/1.webp');
+  background-color: #7d1e57;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 80vh;
+  min-height: 50vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-position: center center;
 }
 .hero-section .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
+  z-index: 1;
   font-size: 46px;
   line-height: 60px;
   text-align: center;
@@ -816,7 +780,7 @@ span.title{
     height: 100vh;
     top: 0;
     right: 0;
-    background-color: #fff; 
+    background-color: #fff;
     color: #000;
     flex-direction: column; /* Stack items vertically */
     justify-content: space-around; /* Evenly distribute space around items */
@@ -831,19 +795,19 @@ span.title{
       100%
     ); /* Initially position off-screen to the right */
     display: flex; /* Ensure it's always a flex container */
-    
   }
 
-  header{
+  header {
     display: none;
   }
 
-  .category, .location {
+  .category,
+  .location {
     font-size: 1.1rem;
     line-height: 1.4rem;
   }
 
-  .title{
+  .title {
     font-size: 1.6rem;
   }
 
@@ -851,7 +815,7 @@ span.title{
     font-size: 1.4rem;
   }
 
-  .long .subtitle{
+  .long .subtitle {
     font-size: 1.4em;
   }
 
@@ -873,7 +837,6 @@ span.title{
     padding: 200px 0px;
     top: 0px;
     left: 40px;
-
   }
 
   #floating-nav .items-container a {
@@ -881,7 +844,7 @@ span.title{
     color: #000;
   }
 
-  header.header{
+  header.header {
     display: none;
   }
 
@@ -900,8 +863,6 @@ span.title{
     max-width: 70%;
     cursor: pointer;
   }
-
-
 
   .hamburger-icon {
     display: flex !important; /* Show the hamburger icon as a flex container on mobile */
@@ -929,5 +890,4 @@ span.title{
     font-size: 36px;
     line-height: 52px;
   }
-
 }
