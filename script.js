@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       id: "3",
-      year: "2018 - Ongoing",
+      year: "Since 2018",
       location: "India",
       title: "Mobile Game",
       category: "Interactive Learning",
