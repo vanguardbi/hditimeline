@@ -656,9 +656,9 @@ document.addEventListener("DOMContentLoaded", () => {
         : "";
 
       let readMoreButton = "";
-      if (item.link) {
-        readMoreButton = `<a href="${item.link}" target="_blank" class="button" style="background-color: ${dividerColor};">Read more</a>`;
-      }
+      // if (item.link) {
+      //   readMoreButton = `<a href="${item.link}" target="_blank" class="button" style="background-color: ${dividerColor};">Read more</a>`;
+      // }
       let content = `
  
           <div class="timeline-item ${
