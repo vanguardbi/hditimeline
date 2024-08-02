@@ -724,13 +724,22 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting) {
           entry.target.classList.add("timeline-item--active");
           const imageUrl = entry.target.querySelector(".timeline__img").src;
-
+  
           // Preload next image and change background after it's loaded
           const currentIndex = Array.from(
             document.querySelectorAll(".timeline-item")
           ).indexOf(entry.target);
           preloadUpcomingImages(currentIndex, 6, () => {
             wholePage.style.backgroundImage = `url(${imageUrl})`;
+            wholePage.style.backgroundSize = 'cover';
+            wholePage.style.backgroundPosition = 'center';
+            wholePage.style.webkitBackgroundSize = 'cover';
+            wholePage.style.mozBackgroundSize = 'cover';
+            wholePage.style.oBackgroundSize = 'cover';
+            wholePage.style.imageRendering = '-webkit-optimize-contrast';
+            wholePage.style.imageRendering = 'optimizeQuality';
+            wholePage.style.imageRendering = 'crisp-edges';
+            wholePage.style.imageRendering = 'pixelated';
           });
         } else {
           entry.target.classList.remove("timeline-item--active");
