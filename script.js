@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Mobile Game",
       category: "Interactive Learning",
       partner: "PSI/UNDP/FAO",
-      link: "https://www.howard-delafield.com/game-of-choice-not-chance",
+      link: "https://www.howard-delafield.com/work/unlocking-girls'-potential-through-gameplay",
       details: [
         {
           subtitle: "Go Nisha Go",
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: " USA, Great Falls National Park, Potomac, Maryland",
       title: "Digital Simulation",
       category: "Interactive Learning",
-      link: "https://www.howard-delafield.com/loop-trail-quest",
+      link: "https://www.howard-delafield.com/work/exploring-choice-making-in-shared-spaces",
       details: [
         {
           subtitle: "Loop Trail Quest",
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "GLOBAL - 24 Priority Countries",
       title: "Games for Program Planning and Design",
       category: "Interactive Learning",
-      link: "https://www.howard-delafield.com/accelerate-behaviors-project",
+      link: "https://www.howard-delafield.com/work/game-based-training-for-intervention-design",
       details: [
         {
           subtitle: "Point & Click Fever Game",
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Bangladesh",
       title: "Strengthening Democratic Local Governance",
       category: "Branding & Demand Generation",
-      link: "https://www.howard-delafield.com/sdlg",
+      link: "https://www.howard-delafield.com/work/creating-demand-for-good-governance",
       details: [
         {
           subtitle: "We are the government",
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Caribbean Region: Guyana, Barbados, Trinidad, & Jamaica",
       title: "Music Videos",
       category: "Branding & Demand Generation",
-      link: "https://www.howard-delafield.com/carisma",
+      link: "https://www.howard-delafield.com/work/communication-for-social-change",
       details: [
         {
           subtitle: "Friendz",
@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Guyana",
       title: "Multi-Media Interventions",
       category: "Branding & Demand Generation",
-      link: "https://www.howard-delafield.com/gharp",
+      link: "https://www.howard-delafield.com/work/engaging-adolescents-to-mitigate-hiv%2Faids",
       details: [
         {
           subtitle: `"Don’t Dis Me"`,
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Ethiopia",
       title: "HIV Compassion Campaign",
       category: "Branding & Demand Generation",
-      link: "https://www.howard-delafield.com/hiv-aids-interventions",
+      link: "https://www.howard-delafield.com/work/tackling-hiv-stigma-by-fostering-compassion-and-empathy",
       details: [
         {
           subtitle: `Demand Generation for HIV Testing`,
@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Nepal",
       title: "Hygiene Product",
       category: "Branding & Demand Generation",
-      link: "https://www.howard-delafield.com/nepal-handwashing-with-soap-initiative",
+      link: "https://www.howard-delafield.com/work/increasing-access-and-demand-for-hand-soap",
       details: [
         {
           subtitle: `Handwashing with soap`,
@@ -458,7 +458,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Myanmar",
       title: "Fuel-Efficient Stoves",
       category: "Branding & Demand Generation",
-      link: "https://www.howard-delafield.com/micro-enterprises-and-product-development",
+      link: "https://www.howard-delafield.com/work/social-marketing-for-global-health%3A-from-contraceptives-to-cookstoves",
       details: [
         {
           subtitle: `A-1 Savings`,
@@ -474,7 +474,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Pakistan",
       title: "Branded 24/7 Health Centers, Transport, and Decision Support",
       category: "Social Franchising of Health Services",
-      link: "https://www.howard-delafield.com/pride-project",
+      link: "https://www.howard-delafield.com/work/seamless-health-care-solutions-to-the-'three-delays'",
       details: [
         {
           subtitle: `Hifazat: Because Life is Precious`,
@@ -505,7 +505,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Guyana",
       title: "A coalition of 43 businesses",
       category: "Social Franchising of Health Services",
-      link: "https://www.howard-delafield.com/guyana-business-coalition",
+      link: "https://www.howard-delafield.com/work/prioritizing-sustainability-from-the-start",
       details: [
         {
           subtitle: `Guyana Business Coalition`,
@@ -521,7 +521,7 @@ document.addEventListener("DOMContentLoaded", () => {
       location: "Bangladesh",
       title: "Branded Drop-in Centers (160+)",
       category: "Social Franchising of Health Services",
-      link: "https://www.howard-delafield.com/modhumita",
+      link: "https://www.howard-delafield.com/work/transforming-health-services-into-places-for-belonging-and-acceptance",
       details: [
         {
           subtitle: `Modhumita (Sweet Friend)`,
