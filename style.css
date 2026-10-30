@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
-
 *,
 *::before,
 *::after {
@@ -9,6 +7,9 @@
   font-weight: 500;
   line-height: 1;
 }
+
+/* Desktop layout is min-width: 1024px; phones and tablets get the
+   compact layout below that. script.js uses the same breakpoint. */
 
 /* NAVBAR */
 
@@ -23,8 +24,8 @@
 }
 
 .container {
-  width: 992px;
-  min-width: 992px;
+  width: 100%;
+  max-width: 992px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -45,17 +46,6 @@
   padding-bottom: 50px;
   margin-right: -1.5px;
 
-}
-
-.navbar > a {
-  color: #000; /* Adjust to match the text color for the menu items */
-  text-decoration: none;
-  padding: 2.1px 0px; /* Adjust the spacing around the links */
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 0em;
-  color: #fff;
-  /* text-transform: uppercase; Uppercase menu text */
 }
 
 .navbar a {
@@ -81,9 +71,11 @@
   transition: transform 0.3s ease;
 }
 
-.navbar a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+@media (hover: hover) {
+  .navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
 .navbar .social {
@@ -93,26 +85,6 @@
   justify-content: space-between;
   margin-left: 19px;
   margin-right: 13px;
-}
-
-/* Responsive design adjustments can be made as well with media queries */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .logo img {
-    margin-bottom: 10px; /* Adds space between logo and navbar on small screens */
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar > a {
-    padding: 5px 0; /* Adjusts padding for stacked menu items */
-  }
 }
 
 /* END OF NAVBAR */
@@ -148,22 +120,18 @@ body {
   background-color: #333333;
 }
 
+/* Stops the off-screen mobile menu from causing sideways scrolling */
+html {
+  overflow-x: hidden;
+}
+
 .nav-item.home a {
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* .nav-item.home{
-  padding-top: 1rem;
-  cursor: pointer;
-} */
-
 h4 {
   margin: 0px;
-}
-
-div#timeline-1 {
-  transition: background-image 0.5s ease-in-out;
 }
 
 .category {
@@ -232,7 +200,6 @@ p.desc {
   font-size: 1rem;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  /* font-weight: normal; */
   line-height: 25px;
   padding-bottom: 0px;
   margin-bottom: -30px;
@@ -269,27 +236,25 @@ p.desc {
   height: 100%;
   margin-left: -1px;
   content: "";
-  /* background: rgba(255, 255, 255, 0.07); */
   background: #f8f8f8;
 }
 
-@media only screen and (max-width: 767px) {
-}
-
+/* Two columns: the year sits left of the line, the content right of it */
 .timeline-item {
+  display: grid;
+  grid-template-columns: 30% minmax(0, 655px);
   padding: 40px 0;
   opacity: 0.3;
-  /* filter: blur(2px); */
   transition: 0.5s;
-  box-sizing: border-box;
-  width: calc(66% -0px);
-  display: flex;
   position: relative;
   transform: translateY(-10px);
   color: white;
-  align-self: center;
-  margin-left: 310px;
   margin-bottom: 300px;
+}
+
+.timeline__content {
+  min-width: 0;
+  margin-left: 55px;
 }
 
 .timeline-item.long p.subtitle {
@@ -308,64 +273,39 @@ p.desc {
   display: none;
 }
 
-/* .timeline-item:before {
-  content: attr(data-text);
-  letter-spacing: 3px;
-  min-height: 20px;
-  width: 100%;
-  position: absolute;
-  color: rgba(255, 255, 255, 0.5);
-  color: #f8f8f8;
-  font-size: 13px;
-  font-family: "Montserrat", sans-serif;
-  border-left: 2px solid rgba(255, 255, 255, 0.5);
-  top: 50%;
-  margin-top: -5px;
-  padding-left: 15px;
-  opacity: 0;
-  right: calc(-100% - 40px);
-} */
-
 .year {
-  /* content: attr(data-text); */
-  /* letter-spacing: 3px; */
-  /* min-height: 20px;
-  width: 100%; */
-  position: absolute;
-  /* color: rgba(255, 255, 255, 0.5); */
+  position: relative;
+  align-self: start;
+  display: flex;
+  justify-content: flex-end; /* long years overflow to the left, away from the line */
+  align-items: center;
+  padding-right: 43px;
   color: #f8f8f8;
   font-size: 2em;
-  font-family: "Montserrat", sans-serif;
-  /* top: 50%; */
-  /* margin-top: -5px; */
-  padding-left: 15px;
-  left: calc(-124.1%);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   z-index: 3;
 }
 
 .year h3 {
-  width: 632px;
   font-weight: bold;
   text-align: right;
+  white-space: nowrap;
   transition: all 0.5s ease-in-out;
-  font-size: 3.5rem;
+  font-size: clamp(2.6rem, 4vw, 3.5rem);
   margin: 33px 0px;
 }
 
 .timeline-item--active .year h3 {
-  font-size: 3.6rem;
+  font-size: clamp(2.7rem, 4.1vw, 3.6rem);
 }
 
+/* The dot, centred on the vertical line */
 .year div {
   width: 20px;
   height: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 100%;
   position: absolute;
-  left: calc(105%);
+  right: -10px;
 }
 
 .title,
@@ -377,32 +317,9 @@ p.desc {
   background-color: #f8f8f8;
 }
 
-.timeline-item::before {
-  right: auto;
-  text-align: right;
-  /* left: calc(-100% - 40px); */
-  padding-left: 0;
-  border-left: none;
-  border-right: 2px solid rgba(255, 255, 255, 0.5);
-  padding-right: 50px;
-  opacity: 1;
-  left: -109.5%;
-  font-size: large;
-  color: white;
-  transition: opacity 0.3s ease, top 0.3s ease, font-size 0.3s ease;
-}
-
 .timeline-item--active {
   opacity: 1;
   transform: translateY(0);
-}
-
-.timeline-item--active::before {
-  top: 50%;
-
-  opacity: 1;
-  font-size: 3em;
-  font-weight: bold;
 }
 
 div.divider {
@@ -411,122 +328,29 @@ div.divider {
   margin: 10px 0px;
 }
 
-@media only screen and (max-width: 767px) {
-  .timeline-item {
-    align-self: baseline !important;
-    width: 100%;
-    padding: 0 30px 150px 80px;
-    flex-direction: column;
-  }
-
-  .title,
-  .subtitle {
-    line-height: 1.4;
-  }
-
-  .timeline-item--active .year h3 {
-    font-size: 2rem;
-    margin: 12px 0px;
-  }
-
-  .timeline:before {
-    left: 40px;
-    top: 0px;
-  }
-
-  .headings {
-    display: flex;
-    margin: 0 auto;
-    padding-left: 40px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-width: 1000px;
-    position: absolute;
-    top: 30px;
-    width: 100%;
-  }
-
-  .timeline-item:before {
-    left: 10px !important;
-    padding: 0 !important;
-    top: 50px;
-    text-align: center !important;
-    width: 60px;
-    border: none !important;
-  }
-
-  .timeline-item:last-child {
-    padding-bottom: 40px;
-  }
-
-  .timeline__text {
-    background-color: #7d1e57;
-    padding: 3em 0em;
-    margin-top: -10px;
-    max-width: 90%;
-    font-size: 10px;
-  }
-
-  .year {
-    margin-left: 0px;
-    flex-direction: row-reverse;
-    font-size: 2rem;
-    position: absolute;
-    left: 14px;
-    width: 100;
-  }
-
-  .year h3 {
-    width: 400px;
-    position: absolute;
-    left: 65px;
-    text-align: left;
-    /* margin-bottom: 50px; */
-    line-height: normal;
-    max-width: 75vw;
-    font-size: 1.5rem;
-    margin: 0px;
-  }
-
-  .year div {
-    width: 20px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 100%;
-    position: absolute;
-    left: calc(109%);
-  }
-
-  .year h3 {
-    /* font-size: 1.2em; */
-  }
-}
-
-.timeline__img {
-  max-width: 100%;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  display: none;
-}
-
 .timeline-container {
   width: 100%;
   position: relative;
   padding: 80px 0;
-  transition: 0.3s ease 0s;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url("./assets/1.jpg");
   min-height: 100vh;
+  /* Clips the fixed background layer to this section */
+  clip-path: inset(0);
 }
 
-.timeline-container:before {
-  position: absolute;
-  left: 0;
+/* Fixed background layer. Used instead of background-attachment: fixed,
+   which iOS Safari doesn't support. */
+.timeline-bg {
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  /* background: rgba(0, 0, 0, 0.5); */
-  content: "";
+  height: 100vh;
+  height: 100lvh;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .timeline-header {
@@ -540,7 +364,6 @@ div.divider {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   margin: 0;
-  /* text-align: center; */
 }
 
 .timeline-header__subtitle {
@@ -549,7 +372,6 @@ div.divider {
   font-size: 16px;
   letter-spacing: 3px;
   margin: 10px 0 0 0;
-  /* font-weight: normal; */
 }
 
 .demo-footer {
@@ -564,25 +386,28 @@ div.divider {
   display: inline-block;
 }
 
-/* Common Styles for All Screens */
+/* Desktop: category list floats bottom-left, shown once the hero has scrolled away */
 #floating-nav .items-container {
   position: fixed;
   bottom: 40px;
-  left: 40px; /* Align to the top right corner */
+  left: 40px;
   border-radius: 10px;
-  z-index: 0;
+  z-index: 5;
   display: flex;
   flex-direction: column; /* Align items vertically */
   align-items: flex-start; /* Align items to the start (left) */
   padding: 10px;
+  /* Stays left of the timeline line, so it can't overlap the content on small laptops */
+  max-width: calc((100vw - 1000px) / 2 + 300px - 56px);
   color: white;
-  min-width: 400px;
-  transition: opacity 0.5s ease-out; /* Adjust the time as needed */
+  transition: opacity 0.5s ease-out;
   opacity: 0;
+  pointer-events: none;
 }
 
-#floating-nav:before:hover {
-  display: none;
+#floating-nav.past-hero .items-container {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .nav-item {
@@ -592,26 +417,36 @@ div.divider {
 }
 
 .nav-item a {
+  display: inline-block; /* wrapped labels stay aligned */
   color: #ccc;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   font-size: 1em;
+  line-height: 1.2;
   margin: 10px;
-}
-
-.nav-item a:hover {
-  color: #fff;
-}
-
-.nav-item:not(.active):hover {
-  text-decoration: none;
-  font-size: 1.2em;
 }
 
 .nav-item.active a {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
+}
+
+/* Hover effects only on devices with a mouse, so they don't stick after a tap */
+@media (hover: hover) {
+  .nav-item a:hover {
+    color: #fff;
+  }
+
+  .nav-item:not(.active):hover {
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  .nav-item:hover::before {
+    width: 1.01rem;
+    height: 1.01rem;
+  }
 }
 
 /* Colored Dots */
@@ -627,11 +462,6 @@ div.divider {
   transform: translateY(-50%);
   z-index: 10;
   transition: all 0.3s ease-in-out;
-}
-
-.nav-item:hover::before {
-  width: 1.01rem;
-  height: 1.01rem;
 }
 
 .nav-item[data-category="Interactive Learning"]::before {
@@ -655,21 +485,21 @@ div.divider {
 }
 
 .hamburger-icon {
-  display: none !important; /* Hidden by default */
+  display: none; /* Hidden on desktop */
   position: fixed;
   top: 10px;
   right: 10px;
   z-index: 2000; /* Ensures it's above other elements */
-  cursor: poMontserrat;
+  cursor: pointer;
   font-size: 20px;
-  transition: transform 0.5s; /* Smooth transition for rotation */
+  transition: transform 0.3s; /* Smooth transition for rotation */
   color: white;
   /* Circle around the icon */
   background-color: #333; /* Circle's background color */
+  border: 0;
   border-radius: 50%; /* Makes the background a circle */
   width: 40px; /* Width of the circle */
   height: 40px; /* Height of the circle */
-  display: flex;
   justify-content: center; /* Center the icon horizontally */
   align-items: center; /* Center the icon vertically */
   padding: 5px; /* Padding around the icon */
@@ -693,7 +523,6 @@ div.divider {
 .subtitle {
   margin: 0px;
   padding: 0px;
-  /* padding-bottom: 20px; */
   font-weight: bold;
   font-size: 3.5em;
   margin-top: -45px;
@@ -713,7 +542,6 @@ span.title {
 .location,
 .category {
   font-size: 1.2em;
-  /* line-height: 1; */
 }
 
 .location span {
@@ -795,161 +623,130 @@ span.title {
 .border-line.border5 {
   background-color: #1371f7;
 }
-/* Full-Screen Floating Nav for Mobile */
-@media only screen and (max-width: 767px) {
-  .timeline-container {
-    background-attachment: scroll;
-  }
-  #floating-nav {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    background-color: #fff;
-    color: #000;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: space-around; /* Evenly distribute space around items */
-    align-items: center; /* Center items horizontally */
-    padding: 10px 0px; /* Padding for the entire nav */
-    max-height: 100vh;
-    max-width: 100vw;
-    z-index: 3;
-    font-size: 1.1rem;
-    transition: all 0.5s ease-in-out;
-    transform: translateX(
-      100%
-    ); /* Initially position off-screen to the right */
-    display: flex; /* Ensure it's always a flex container */
-  }
 
-  header {
+/* Phones and tablets */
+@media only screen and (max-width: 1023.98px) {
+  header.header {
     display: none;
   }
 
-  .category,
-  .location {
+  .hamburger-icon {
+    display: flex;
+  }
+
+  /* Full-screen category menu, slides in from the right */
+  #floating-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    background-color: #fff;
+    color: #000;
+    z-index: 1000;
     font-size: 1.1rem;
-    line-height: 1.4rem;
-  }
-
-  .title {
-    font-size: 1.6rem;
-  }
-
-  .subtitle {
-    font-size: 1.4rem;
-  }
-
-  .long .subtitle {
-    font-size: 1.4em;
-  }
-
-  .desc {
-    font-size: 1rem;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 0.5s ease-in-out, visibility 0s 0.5s;
   }
 
   #floating-nav.active {
     transform: translateX(0); /* Slide in */
+    visibility: visible;
+    transition: transform 0.5s ease-in-out;
   }
 
   #floating-nav .items-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: static;
     height: 100%;
-    max-height: 100vh;
-    max-width: 100vw;
-    padding: 200px 0px;
-    top: 0px;
+    justify-content: space-between;
+    padding: clamp(60px, 15vh, 200px) 40px;
+    max-width: none;
+    overflow-y: auto;
     opacity: 1;
-    left: 40px;
+    pointer-events: auto;
   }
 
   #floating-nav .items-container a {
+    display: block; /* Makes the link fill the entire width of nav-item */
     text-align: start;
     color: #000;
-  }
-
-  header.header {
-    display: none;
-  }
-
-  .nav-item {
-    width: 100%; /* Full width for better layout */
-    /* text-align: center; Center-align the text */
-    max-width: 100%;
-  }
-
-  nav-item::before {
-    margin-left: 120px;
-  }
-
-  .nav-item a {
-    display: block; /* Makes the link fill the entire width of nav-item */
-    max-width: 70%;
     cursor: pointer;
   }
 
-  .hamburger-icon {
-    display: flex !important; /* Show the hamburger icon as a flex container on mobile */
-    transition: transform 0.3s; /* Smooth transition for rotation */
-  }
-
-  .timeline-header__title {
-    font-size: 2.2rem;
-  }
-
-  .timeline-item {
-    margin: 0px;
-    flex-direction: column;
-    font-size: 1.5rem;
+  .nav-item {
+    width: 100%;
   }
 
   .timeline-header {
-    width: 100%;
-    text-align: center;
     margin-bottom: 80px;
-    position: relative;
   }
-  .hero-section .hero-text {
-    max-width: 100%;
-    font-size: 36px;
-    line-height: 52px;
-  }
-}
 
-/* Existing media query for mobile devices */
-@media only screen and (max-width: 767px) {
-  .timeline-container {
-    background-attachment: fixed;
-    background-size: cover; /* Adjust background size to fit within container */
-    background-position: center center; /* Center the background image */
+  .headings {
+    padding-left: 40px;
   }
-  
-  #floating-nav {
-    position: fixed;
+
+  .timeline:before {
+    left: 40px;
+    top: 0px;
+  }
+
+  /* Single column: year and dot above the content, line on the left */
+  .timeline-item {
+    display: block;
     width: 100%;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    background-color: #fff;
-    color: #000;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: space-around; /* Evenly distribute space around items */
-    align-items: center; /* Center items horizontally */
-    padding: 10px 0px; /* Padding for the entire nav */
-    max-height: 100vh;
-    max-width: 100vw;
-    z-index: 3;
-    font-size: 1.1rem;
-    transition: all 0.5s ease-in-out;
-    transform: translateX(100%); /* Initially position off-screen to the right */
-    display: flex; /* Ensure it's always a flex container */
+    padding: 0 30px 150px 80px;
+    margin: 0px;
+    font-size: 1.5rem;
   }
 
-  header {
-    display: none;
+  .timeline-item:last-child {
+    padding-bottom: 40px;
+  }
+
+  .timeline__content {
+    margin-left: 0;
+  }
+
+  .timeline__text {
+    width: auto;
+    max-width: min(90%, 600px);
+    font-size: 10px;
+  }
+
+  .year {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    flex-direction: row-reverse; /* dot on the line, year to its right */
+    gap: 29px;
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  .year div {
+    position: static;
+    flex-shrink: 0;
+  }
+
+  .year h3 {
+    text-align: left;
+    line-height: normal;
+    font-size: 1.5rem;
+    margin: 0px;
+  }
+
+  .timeline-item--active .year h3 {
+    font-size: 2rem;
+  }
+
+  .title,
+  .subtitle {
+    line-height: 1.4;
+    /* Long words like "DEMOCRATIC" don't fit on the narrowest phones */
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 
   .category,
@@ -974,88 +771,13 @@ span.title {
     font-size: 1rem;
   }
 
-  #floating-nav.active {
-    transform: translateX(0); /* Slide in */
-  }
-
-  #floating-nav .items-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    max-height: 100vh;
-    max-width: 100vw;
-    padding: 200px 0px;
-    top: 0px;
-    left: 40px;
-  }
-
-  #floating-nav .items-container a {
-    text-align: start;
-    color: #000;
-  }
-
-  header.header {
-    display: none;
-  }
-
-  .nav-item {
-    width: 100%; /* Full width for better layout */
-    /* text-align: center; Center-align the text */
-    max-width: 100%;
-  }
-
-  nav-item::before {
-    margin-left: 120px;
-  }
-
-  .nav-item a {
-    display: block; /* Makes the link fill the entire width of nav-item */
-    max-width: 70%;
-    cursor: pointer;
-  }
-
-  .hamburger-icon {
-    display: flex !important; /* Show the hamburger icon as a flex container on mobile */
-    transition: transform 0.3s; /* Smooth transition for rotation */
-  }
-
   .timeline-header__title {
     font-size: 2.2rem;
   }
 
-  .timeline-item {
-    margin: 0px;
-    flex-direction: column;
-    font-size: 1.5rem;
-  }
-
-  .timeline-header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 80px;
-    position: relative;
-  }
   .hero-section .hero-text {
     max-width: 100%;
     font-size: 36px;
     line-height: 52px;
-  }
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .timeline-container {
-    background-size: cover;
-    background-position: center;
-    image-rendering: optimizeQuality;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -webkit-image-rendering: -webkit-optimize-contrast;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
   }
 }

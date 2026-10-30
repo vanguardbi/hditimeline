@@ -1,21 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Same breakpoint as style.css
+  const desktopQuery = window.matchMedia("(min-width: 1024px)");
+
+  function imageUrl(id) {
+    // Phones and tablets get the 2000px versions in assets/sm
+    return desktopQuery.matches
+      ? `./assets/${id}.webp`
+      : `./assets/sm/${id}.webp`;
+  }
+
   function preloadImage(src, callback) {
     const img = new Image();
     img.onload = callback; // Call the callback function when the image is loaded
     img.src = src;
   }
 
-  function preloadUpcomingImages(currentIndex, preloadCount = 3, callback) {
-    const upcomingItems = timelineData.slice(
-      currentIndex,
-      currentIndex + preloadCount
-    );
+  function preloadUpcomingImages(items, currentIndex, preloadCount = 2, callback) {
+    const upcomingItems = items.slice(currentIndex, currentIndex + preloadCount);
     upcomingItems.forEach((item, index) => {
       if (index === 0) {
         // Only preload the next immediate image with callback
-        preloadImage(`./assets/${item.id}.webp`, callback);
+        preloadImage(imageUrl(item.dataset.id), callback);
       } else {
-        preloadImage(`./assets/${item.id}.webp`);
+        preloadImage(imageUrl(item.dataset.id));
       }
     });
   }
@@ -25,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("timeline-1")
     .querySelector(".timeline");
   const wholePage = document.getElementById("timeline-1");
+  const backgroundLayer = document.getElementById("timeline-bg");
   const navItems = document.querySelectorAll(".nav-item");
   const hamburgerIcon = document.getElementById("hamburger-icon");
   const floatingNav = document.getElementById("floating-nav");
@@ -586,23 +594,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
   const observerCallback = (entries, observer) => {
-    // Only run this effect on screens wider than 768px
-    if (window.innerWidth > 768) {
-      entries.forEach((entry) => {
-        const itemsContainer = document.querySelector("#floating-nav .items-container");
-        if (entry.isIntersecting) {
-          // The header is halfway across the screen, gradually show the items-container
-          itemsContainer.style.opacity = "0";
-          // Ensure the element is not clickable when fully transparent
-          itemsContainer.style.pointerEvents = "none";
-        } else {
-          // The header is not halfway across the screen, gradually hide the items-container
-          itemsContainer.style.opacity = "1";
-          // Make the element clickable again
-          itemsContainer.style.pointerEvents = "all";
-        }
-      });
-    }
+    // style.css only fades the category list in and out on desktop
+    entries.forEach((entry) => {
+      floatingNav.classList.toggle("past-hero", !entry.isIntersecting);
+    });
   };
 
   // Step 2: Set up the Intersection Observer options
@@ -663,13 +658,12 @@ document.addEventListener("DOMContentLoaded", () => {
  
           <div class="timeline-item ${
             item.id === "5" || item.id === "20" ? "long" : ""
-          }" data-text="${item.year}">     
+          }" data-text="${item.year}" data-id="${item.id}">
           <div class="year">
-              <h3>${item.year}</h3> 
-              <div class="dot"></div>         
-          </div>     
+              <h3>${item.year}</h3>
+              <div class="dot"></div>
+          </div>
               <div class="timeline__content">
-                    <img class="timeline__img" src="./assets/${item.id}.webp"/>
                     <div class="timeline__text" style="background-color: ${backgroundColor};">
                       <div class="title_content">
                             <span class="category">${item.category}</span>
@@ -699,9 +693,9 @@ document.addEventListener("DOMContentLoaded", () => {
   function initTimeline(category = "Full Timeline") {
     // Sort timelineData in descending order by year
     timelineData.sort((a, b) => {
-      // Extract the first 4 characters of the year and convert to number
-      const yearA = parseInt(a.year.substring(0, 4));
-      const yearB = parseInt(b.year.substring(0, 4));
+      // Use the first 4-digit year, so "Since 2018" and " 1996-1998" sort correctly
+      const yearA = parseInt(a.year.match(/\d{4}/)[0]);
+      const yearB = parseInt(b.year.match(/\d{4}/)[0]);
 
       // Compare the years
       return yearB - yearA;
@@ -712,34 +706,36 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Setup Intersection Observer
+  let timelineObserver;
+  let latestImageUrl = "";
+
   function setupIntersectionObserver() {
+    // An item is active while it crosses the middle of the screen. A visibility
+    // threshold never triggers for items taller than two screens (small phones, landscape).
     const observerOptions = {
       root: null,
-      threshold: 0.5,
-      rootMargin: "10px",
+      threshold: 0,
+      rootMargin: "-45% 0px -45% 0px",
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    // Stop watching the items from the previous render
+    if (timelineObserver) timelineObserver.disconnect();
+
+    timelineObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("timeline-item--active");
-          const imageUrl = entry.target.querySelector(".timeline__img").src;
-  
+          const src = imageUrl(entry.target.dataset.id);
+          latestImageUrl = src;
+
           // Preload next image and change background after it's loaded
-          const currentIndex = Array.from(
-            document.querySelectorAll(".timeline-item")
-          ).indexOf(entry.target);
-          preloadUpcomingImages(currentIndex, 6, () => {
-            wholePage.style.backgroundImage = `url(${imageUrl})`;
-            wholePage.style.backgroundSize = 'cover';
-            wholePage.style.backgroundPosition = 'center';
-            wholePage.style.webkitBackgroundSize = 'cover';
-            wholePage.style.mozBackgroundSize = 'cover';
-            wholePage.style.oBackgroundSize = 'cover';
-            wholePage.style.imageRendering = '-webkit-optimize-contrast';
-            wholePage.style.imageRendering = 'optimizeQuality';
-            wholePage.style.imageRendering = 'crisp-edges';
-            wholePage.style.imageRendering = 'pixelated';
+          const items = Array.from(document.querySelectorAll(".timeline-item"));
+          const currentIndex = items.indexOf(entry.target);
+          preloadUpcomingImages(items, currentIndex, 2, () => {
+            // Skip if the user has already scrolled on to another item
+            if (latestImageUrl === src) {
+              backgroundLayer.style.backgroundImage = `url(${src})`;
+            }
           });
         } else {
           entry.target.classList.remove("timeline-item--active");
@@ -749,46 +745,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document
       .querySelectorAll(".timeline-item")
-      .forEach((item) => observer.observe(item));
+      .forEach((item) => timelineObserver.observe(item));
   }
 
   // Setup navigation
   function setupNavigation() {
     navItems.forEach((item) => {
       item.addEventListener("click", (event) => {
+        const selectedCategory = item.getAttribute("data-category");
+        // "Back to Homepage" has no category and is a normal link
+        if (!selectedCategory) return;
+        event.preventDefault();
+
         // Remove active class from all nav items
         navItems.forEach((navItem) => navItem.classList.remove("active"));
 
         // Add active class to the clicked nav item
         event.currentTarget.classList.add("active");
 
-        const selectedCategory = item.getAttribute("data-category");
         const backgroundImage =
           categorySettings[selectedCategory].backgroundImage;
-        wholePage.style.backgroundImage = `url(${backgroundImage})`;
+        if (backgroundImage) {
+          backgroundLayer.style.backgroundImage = `url(${backgroundImage})`;
+        }
         initTimeline(selectedCategory);
 
-        // Close the floating nav
-        floatingNav.classList.remove("active");
-        hamburgerIcon.innerHTML = "&#9776;";
-        hamburgerIcon.classList.remove("active");
+        setNavigationOpen(false);
+        wholePage.scrollIntoView({ behavior: "smooth" });
       });
     });
   }
 
-  function toggleNavigation() {
-    floatingNav.classList.toggle("active");
+  function setNavigationOpen(open) {
+    floatingNav.classList.toggle("active", open);
+    hamburgerIcon.classList.toggle("active", open);
+    hamburgerIcon.setAttribute("aria-expanded", open);
+    hamburgerIcon.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    // The 'X' icon is drawn in CSS
+    hamburgerIcon.innerHTML = open ? "" : "&#9776;";
   }
 
   function setupHamburgerToggle() {
     hamburgerIcon.addEventListener("click", () => {
-      hamburgerIcon.classList.toggle("active");
-      if (hamburgerIcon.classList.contains("active")) {
-        hamburgerIcon.innerHTML = ""; // Change to 'X' icon
-      } else {
-        hamburgerIcon.innerHTML = "&#9776;"; // Change back to hamburger icon
-      }
-      toggleNavigation();
+      setNavigationOpen(!floatingNav.classList.contains("active"));
     });
   }
 

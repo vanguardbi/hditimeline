@@ -2,22 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HDI Timeline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
     />
-    <link rel="icon" sizes="192x192" href="favicon.jpeg" type="image/png" />
+    <link rel="icon" sizes="192x192" href="favicon.jpeg" type="image/jpeg" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo">   
+        <div class="logo">
           <a href="https://howard-delafield.com">
             <img
               src="./assets/logonew.svg"
@@ -55,7 +59,42 @@
     </header>
 
     <!-- <div id="loader" class="loader"></div> -->
-    <div class="hamburger-icon" id="hamburger-icon">&#9776;</div>
+    <button
+      type="button"
+      class="hamburger-icon"
+      id="hamburger-icon"
+      aria-label="Open menu"
+      aria-controls="floating-nav"
+      aria-expanded="false"
+    >&#9776;</button>
+
+    <!-- Category filter: floats bottom-left on desktop, full-screen menu on phones and tablets -->
+    <nav id="floating-nav" aria-label="Timeline categories">
+      <div class="items-container">
+        <div class="nav-item" data-category="Full Timeline">
+          <a href="#">Full Timeline</a>
+        </div>
+        <div class="nav-item" data-category="Interactive Learning">
+          <a href="#">Interactive Learning</a>
+        </div>
+        <div class="nav-item" data-category="Branding & Demand Generation">
+          <a href="#">Branding & Demand Generation</a>
+        </div>
+
+        <div
+          class="nav-item"
+          data-category="Social Franchising of Health Services"
+        >
+          <a href="#">Social Franchising of Health Services</a>
+        </div>
+        <div class="nav-item" data-category="Policy Guidance & Advisory">
+          <a href="#">Policy Guidance & Advisory</a>
+        </div>
+        <div class="nav-item home" data-category="">
+          <a href="https://howard-delafield.com">Back to Homepage</a>
+        </div>
+      </div>
+    </nav>
 
     <!-- Top Hero Image -->
     <section>
@@ -80,34 +119,8 @@
     </section> -->
     <!-- partial:index.partial.html -->
     <div class="timeline-container" id="timeline-1">
-      <div class="timeline-header">
-        <div id="floating-nav">
-          <div class="items-container">
-            <div class="nav-item" data-category="Full Timeline">
-              <a href="#">Full Timeline</a>
-            </div>
-            <div class="nav-item" data-category="Interactive Learning">
-              <a href="#">Interactive Learning</a>
-            </div>
-            <div class="nav-item" data-category="Branding & Demand Generation">
-              <a href="#">Branding & Demand Generation</a>
-            </div>
-
-            <div
-              class="nav-item"
-              data-category="Social Franchising of Health Services"
-            >
-              <a href="#">Social Franchising of Health Services</a>
-            </div>
-            <div class="nav-item" data-category="Policy Guidance & Advisory">
-              <a href="#">Policy Guidance & Advisory</a>
-            </div>
-            <div class="nav-item home" data-category="">
-              <a href="https://howard-delafield.com">Back to Homepage</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="timeline-bg" id="timeline-bg" aria-hidden="true"></div>
+      <div class="timeline-header"></div>
       <div class="headings">
         <!-- <h2 class="timeline-header__title">A Timeline</h2>
         <h3 class="timeline-header__subtitle">of Global Innovations</h3> -->
@@ -120,7 +133,5 @@
       >
     </div>
     <!-- partial -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!-- <script src="./script.js"></script> -->
   </body>
 </html>
