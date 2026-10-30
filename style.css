@@ -423,7 +423,7 @@ div.divider {
   transition: all 0.2s ease-in-out;
   font-size: 1em;
   line-height: 1.2;
-  margin: 10px;
+  margin: 0 10px;
 }
 
 .nav-item.active a {
@@ -670,6 +670,7 @@ span.title {
 
   #floating-nav .items-container a {
     display: block; /* Makes the link fill the entire width of nav-item */
+    margin: 10px;
     text-align: start;
     color: #000;
     cursor: pointer;
@@ -677,6 +678,11 @@ span.title {
 
   .nav-item {
     width: 100%;
+  }
+
+  /* The white dot disappears against the white menu */
+  .nav-item[data-category="Full Timeline"]::before {
+    background-color: #333;
   }
 
   .timeline-header {
